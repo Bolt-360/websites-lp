@@ -1,12 +1,12 @@
-import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
-import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -35,7 +35,7 @@ export default function CareerLatestPosts({ posts }: Props) {
       color="inherit"
       endIcon={<Iconify icon="carbon:chevron-right" />}
     >
-      View All
+      Ver tudo
     </Button>
   );
 

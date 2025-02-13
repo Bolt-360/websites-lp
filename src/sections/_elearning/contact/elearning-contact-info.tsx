@@ -1,15 +1,15 @@
+import Container from '@mui/material/Container';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Unstable_Grid2';
-import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
-import { _socials, _offices } from 'src/_mock';
+import { _offices, _socials } from 'src/_mock';
 
-import ContactMap from 'src/components/map';
 import Iconify from 'src/components/iconify';
+import ContactMap from 'src/components/map';
 
 // ----------------------------------------------------------------------
 
@@ -39,8 +39,8 @@ export default function ElearningContactInfo() {
                 <Iconify icon="carbon:email" width={24} sx={{ mr: 1 }} /> Email
               </Stack>
 
-              <Link color="inherit" variant="body2" href="mailto:hello@example.com">
-                hello@example.com
+              <Link color="inherit" variant="body2" href="contato@bolt360.com.br">
+              contato@bolt360.com.br
               </Link>
             </Stack>
 

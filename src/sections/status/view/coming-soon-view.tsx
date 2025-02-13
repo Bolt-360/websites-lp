@@ -1,19 +1,19 @@
 'use client';
 
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 
 import { useCountdown } from 'src/hooks/use-countdown';
 
 import { _socials } from 'src/_mock';
 
-import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ export default function ComingSoonView() {
       <TextField
         fullWidth
         hiddenLabel
-        placeholder="Enter your email"
+        placeholder="Insira seu email"
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">

@@ -1,10 +1,10 @@
+import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import SvgColor from 'src/components/svg-color';
 import Carousel, { useCarousel } from 'src/components/carousel';
+import SvgColor from 'src/components/svg-color';
 
 import { IBrandProps } from 'src/types/brand';
 
@@ -50,10 +50,10 @@ export default function ElearningOurClients({ brands }: Props) {
           mb: { xs: 8, md: 10 },
         }}
       >
-        <Typography variant="h2">We Work With</Typography>
+        <Typography variant="h2">Nossos Clientes</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          Quisque aliquet, libero consequat elementum convallis.
+        Empresas que já transformaram seus negócios com nossos sites.
         </Typography>
       </Stack>
 

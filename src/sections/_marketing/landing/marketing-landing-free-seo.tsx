@@ -1,14 +1,14 @@
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { inputLabelClasses } from '@mui/material/InputLabel';
+import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
 import { alpha, styled, useTheme } from '@mui/material/styles';
 import TextField, { TextFieldProps } from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import { bgGradient } from 'src/theme/css';
 
@@ -65,8 +65,8 @@ export default function MarketingLandingFreeSEO() {
                 textAlign: { xs: 'center', md: 'left' },
               }}
             >
-              Get Free
-              <br /> SEO Analysis
+              Obtenha uma
+              <br /> Análise gratis do seu Site
             </Typography>
 
             <Stack
@@ -77,8 +77,8 @@ export default function MarketingLandingFreeSEO() {
             >
               <Iconify icon="carbon:email" width={24} sx={{ mr: 2 }} />
 
-              <Link color="inherit" href="mailto:hello@example.com">
-                hello@example.com
+              <Link color="inherit" href="contato@bolt360.com.br">
+              contato@bolt360.com.br
               </Link>
             </Stack>
 
@@ -89,22 +89,18 @@ export default function MarketingLandingFreeSEO() {
               sx={{ color: 'common.white' }}
             >
               <Iconify icon="carbon:location" width={24} sx={{ mr: 2 }} />
-              508 Bridle Avenue Newnan, GA 30263
+             Rua Tereza Bezerra Salustino 1902 Natal Lagoa nova
             </Stack>
           </Grid>
 
           <Grid xs={12} md={5}>
             <Stack alignItems={{ xs: 'center', md: 'flex-start' }}>
-              <StyledInput label="Name" sx={{ mb: 2.5 }} />
+              <StyledInput label="Nome" sx={{ mb: 2.5 }} />
 
-              <StyledInput label="Email" sx={{ mb: 2.5 }} />
-
-              <StyledInput label="Phone" sx={{ mb: 2.5 }} />
-
-              <StyledInput label="Website URL" sx={{ mb: 5 }} />
+              <StyledInput label="Telefone" sx={{ mb: 2.5 }} />
 
               <Button size="large" variant="contained" color="primary">
-                Send Request
+               Enviar
               </Button>
             </Stack>
           </Grid>

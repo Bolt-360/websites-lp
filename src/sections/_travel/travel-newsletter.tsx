@@ -1,12 +1,12 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import TextField from '@mui/material/TextField';
-import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
-import { alpha, useTheme } from '@mui/material/styles';
 import InputAdornment from '@mui/material/InputAdornment';
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
+import { alpha, useTheme } from '@mui/material/styles';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -60,7 +60,7 @@ export default function TravelNewsletter() {
               <TextField
                 fullWidth
                 hiddenLabel
-                placeholder="Enter your email"
+                placeholder="Insira seu email"
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">

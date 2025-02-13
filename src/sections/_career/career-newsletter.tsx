@@ -1,11 +1,11 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import InputAdornment from '@mui/material/InputAdornment';
 import InputBase from '@mui/material/InputBase';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
-import InputAdornment from '@mui/material/InputAdornment';
 
 import { bgGradient } from 'src/theme/css';
 
@@ -33,7 +33,7 @@ export default function CareerNewsletter() {
           </Typography>
 
           <InputBase
-            placeholder="Enter your email"
+            placeholder="Insira seu email"
             endAdornment={
               <InputAdornment position="end">
                 <Button

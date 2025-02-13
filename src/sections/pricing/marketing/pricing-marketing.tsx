@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import { IPricingMarketingProps } from 'src/types/pricing';
@@ -41,20 +41,20 @@ export default function PricingMarketing({ plans }: Props) {
             Pricing
           </Typography>
 
-          <Typography variant="h2">Check Our Pricing</Typography>
+          <Typography variant="h2">Preços</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Choose the perfect plan for your needs.
-            <br /> Always flexible to grow
+            Escolha o plano perfeito para suas necessidades.
+            <br /> Sempre flexível para crescer
           </Typography>
         </Stack>
 
         <Stack direction="row" alignItems="center">
-          <Typography variant="overline">MONTHLY</Typography>
+          <Typography variant="overline">MENSAL</Typography>
 
           <Switch defaultChecked />
 
-          <Typography variant="overline">YEARLY (save 10%)</Typography>
+          <Typography variant="overline">ANUAL (economize 10%)</Typography>
         </Stack>
       </Stack>
 

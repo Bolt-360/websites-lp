@@ -61,7 +61,7 @@ const base = (index: number) => ({
   category: 'Marketing',
   favorited: _mock.boolean(index),
   createdAt: _mock.time(index),
-  duration: '8 minutes read',
+  duration: '8 minutos de leitura',
   tags: _tags.slice(index + 1, index + 2),
   author: {
     name: _mock.fullName(index),

@@ -1,13 +1,13 @@
-import Box from '@mui/material/Box';
 import Timeline from '@mui/lab/Timeline';
-import TimelineDot from '@mui/lab/TimelineDot';
-import Container from '@mui/material/Container';
-import TimelineItem from '@mui/lab/TimelineItem';
-import Typography from '@mui/material/Typography';
-import TimelineContent from '@mui/lab/TimelineContent';
-import { alpha, useTheme } from '@mui/material/styles';
 import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import { alpha, useTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -17,28 +17,28 @@ import { bgGradient } from 'src/theme/css';
 
 const TIMELINES = [
   {
-    step: 'STEP 1',
-    title: 'Planning',
+    step: 'Primeiro Passo',
+    title: 'Planejamento',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Entendemos as necessidades do seu negócio e definimos os objetivos do site.',
   },
   {
-    step: 'STEP 2',
-    title: 'Research',
+    step: 'Segundo Passo',
+    title: 'Design e Desenvolvimento',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Criamos o layout e desenvolvemos o site com foco em usabilidade e conversão.',
   },
   {
-    step: 'STEP 3',
-    title: 'Optimizing',
+    step: 'Terceiro Passo',
+    title: 'Otimização',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Otimizamos o site para garantir carregamento rápido, SEO e uma experiência impecável para o usuário.',
   },
   {
-    step: 'STEP 4',
-    title: 'Results',
+    step: 'Quarto Passo',
+    title: 'Lançamento e Suporte',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Colocamos seu site no ar e oferecemos suporte para garantir que tudo funcione perfeitamente.',
   },
 ];
 
@@ -64,8 +64,7 @@ export default function MarketingServicesHowItWork() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          How It Works
-        </Typography>
+        Como Funciona        </Typography>
 
         <Typography
           sx={{
@@ -77,7 +76,7 @@ export default function MarketingServicesHowItWork() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+        Saiba como desenvolvemos o site perfeito para o seu negócio em quatro etapas simples.
         </Typography>
 
         <Timeline position={mdUp ? 'alternate' : 'right'}>

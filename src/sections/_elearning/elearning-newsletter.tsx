@@ -1,10 +1,10 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
 import InputBase, { inputBaseClasses } from '@mui/material/InputBase';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import Image from 'src/components/image';
 
@@ -37,7 +37,7 @@ export default function ElearningNewsletter() {
 
             <InputBase
               fullWidth
-              placeholder="Enter your email"
+              placeholder="Insira seu email"
               endAdornment={
                 <InputAdornment position="end">
                   <Button color="primary" size="large" variant="contained">

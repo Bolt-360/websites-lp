@@ -4,8 +4,8 @@ import Typography from '@mui/material/Typography';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ export default function MarketingContactInfo() {
             </Link>
           </Stack>
 
-          <Typography variant="body2">508 Bridle Avenue Newnan, GA 30263e</Typography>
+          <Typography variant="body2">Rua Tereza Bezerra Salustino 1902 Natal Lagoa nova</Typography>
         </Stack>
       </Stack>
 
@@ -50,7 +50,7 @@ export default function MarketingContactInfo() {
         <Stack spacing={0.5}>
           <Typography variant="h6">Talk to us</Typography>
           <Link color="inherit" variant="body2" href="mailto:hello@example.com">
-            hello@example.com
+          contato@bolt360.com.br
           </Link>
         </Stack>
       </Stack>

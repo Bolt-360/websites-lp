@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
-import Carousel, { useCarousel, CarouselArrows } from 'src/components/carousel';
+import Carousel, { CarouselArrows, useCarousel } from 'src/components/carousel';
 
 import { ITestimonialProps } from 'src/types/testimonial';
 
@@ -67,8 +67,7 @@ export default function ElearningTestimonial({ testimonials }: Props) {
         <Grid container spacing={3} justifyContent="center">
           <Grid xs={12} md={6}>
             <Typography variant="h2" sx={{ mb: 5 }}>
-              What Our Customer Say
-            </Typography>
+            O que nossos Clientes Dizem            </Typography>
 
             <CarouselArrows
               onNext={carouselThumb.onNext}

@@ -1,10 +1,10 @@
-import Stack from '@mui/material/Stack';
+import Box, { BoxProps } from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import TextField from '@mui/material/TextField';
-import Box, { BoxProps } from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 
 import SvgColor from 'src/components/svg-color';
 
@@ -32,10 +32,10 @@ export default function MarketingNewsletter({ sx, ...other }: BoxProps) {
             />
 
             <Stack spacing={1}>
-              <Typography variant="h4">Sign Up For Newsletter</Typography>
+              <Typography variant="h4">Entre em contato</Typography>
 
               <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                Receive 50% discount on first project
+                Entre em contato para ganhar 50% de desconto
               </Typography>
             </Stack>
           </Stack>
@@ -43,7 +43,7 @@ export default function MarketingNewsletter({ sx, ...other }: BoxProps) {
           <TextField
             fullWidth
             hiddenLabel
-            placeholder="Enter your email"
+            placeholder="Insira seu email"
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -57,7 +57,7 @@ export default function MarketingNewsletter({ sx, ...other }: BoxProps) {
                       borderBottomLeftRadius: 0,
                     }}
                   >
-                    Sign Up
+                    Enviar
                   </Button>
                 </InputAdornment>
               ),

@@ -1,15 +1,15 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
+import Carousel, { CarouselArrows, CarouselDots, useCarousel } from 'src/components/carousel';
 import Iconify from 'src/components/iconify';
-import Carousel, { useCarousel, CarouselDots, CarouselArrows } from 'src/components/carousel';
 
 import { IBlogPostProps } from 'src/types/blog';
 
@@ -39,7 +39,7 @@ export default function TravelLandingPosts({ posts }: Props) {
     <Box sx={{ bgcolor: 'grey.900' }}>
       {!mdUp && (
         <Typography variant="h2" sx={{ pt: 10, pb: 8, color: 'common.white', textAlign: 'center' }}>
-          Latest Posts
+          Veja nosso Portfolio
         </Typography>
       )}
 
@@ -96,7 +96,7 @@ export default function TravelLandingPosts({ posts }: Props) {
               href={paths.travel.posts}
               endIcon={<Iconify icon="carbon:chevron-right" />}
             >
-              View All
+              Ver tudo
             </Button>
           </Box>
         </Box>

@@ -1,30 +1,30 @@
-import Link from '@mui/material/Link';
 import Masonry from '@mui/lab/Masonry';
-import Divider from '@mui/material/Divider';
-import Collapse from '@mui/material/Collapse';
-import TextField from '@mui/material/TextField';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import { alpha, styled } from '@mui/material/styles';
-import Stack, { StackProps } from '@mui/material/Stack';
-import InputAdornment from '@mui/material/InputAdornment';
 import Button, { buttonClasses } from '@mui/material/Button';
+import Collapse from '@mui/material/Collapse';
+import Container from '@mui/material/Container';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import InputAdornment from '@mui/material/InputAdornment';
+import Link from '@mui/material/Link';
+import Stack, { StackProps } from '@mui/material/Stack';
+import { alpha, styled } from '@mui/material/styles';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
-import { usePathname } from 'src/routes/hooks';
 import { RouterLink } from 'src/routes/components';
+import { usePathname } from 'src/routes/hooks';
 
 import { useBoolean } from 'src/hooks/use-boolean';
 import { useResponsive } from 'src/hooks/use-responsive';
 
 import { _socials } from 'src/_mock';
 
-import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
+import Logo from 'src/components/logo';
 
+import { navConfig, pageLinks } from './config-navigation';
 import { NavSubListProps } from './nav/types';
-import { pageLinks, navConfig } from './config-navigation';
 
 // ----------------------------------------------------------------------
 
@@ -59,7 +59,7 @@ export default function Footer() {
       <Logo single />
 
       <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
-        © 2023. All rights reserved
+        © 2025. Todos os direitos reservados
       </Typography>
     </Container>
   );

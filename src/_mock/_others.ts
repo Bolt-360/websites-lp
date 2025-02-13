@@ -20,7 +20,7 @@ export const _testimonials = [...Array(8)].map((_, index) => ({
   createdAt: _mock.time(index),
   ratingNumber: 5,
   review:
-    'Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.',
+    'Uma experiência incrível, amo o serviço, muito obrigado ao time que sonhos se tornam realidade, adorei a atitude e o enfoque.',
 }));
 
 // ----------------------------------------------------------------------

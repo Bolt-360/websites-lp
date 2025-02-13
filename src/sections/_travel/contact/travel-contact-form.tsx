@@ -1,17 +1,17 @@
-import * as Yup from 'yup';
-import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form';
+import * as Yup from 'yup';
 
-import Stack from '@mui/material/Stack';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
+import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import Image from 'src/components/image';
 import FormProvider, { RHFTextField } from 'src/components/hook-form';
+import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -103,7 +103,7 @@ export default function TravelContactForm() {
                   alignSelf: { xs: 'center', md: 'unset' },
                 }}
               >
-                Send Request
+               Enviar
               </LoadingButton>
             </Stack>
           </FormProvider>

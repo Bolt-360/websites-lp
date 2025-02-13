@@ -8,33 +8,33 @@ import SvgColor from 'src/components/svg-color';
 
 const SERVICES = [
   {
-    title: 'Search Engine Optimization',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Otimização para Motores de Busca (SEO)',
+    description: 'Melhore o ranqueamento do seu site no Google e atraia mais visitantes de forma orgânica. ',
     icon: '/assets/icons/ic_statistics.svg',
   },
   {
-    title: 'Social Media Strategy',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Estratégia de Redes Sociais',
+    description: 'Conecte-se ao seu público com links integrados e direcionamento para suas redes sociais. ',
     icon: '/assets/icons/ic_social_media.svg',
   },
   {
-    title: 'Real Time and Data',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Monitoramento de Desempenho',
+    description: 'Acompanhe o desempenho do seu site para garantir uma experiência de alta qualidade. ',
     icon: '/assets/icons/ic_real_time.svg',
   },
   {
-    title: 'Online Media Management',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Gerenciamento de Conteúdo',
+    description: 'Sites prontos e atualizados para exibir as informações mais importantes do seu negócio. ',
     icon: '/assets/icons/ic_checklist.svg',
   },
   {
-    title: 'Reporting & Analysis',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Relatórios de Desempenho',
+    description: 'Receba relatórios periódicos sobre o tráfego e as métricas do seu site ',
     icon: '/assets/icons/ic_report.svg',
   },
   {
-    title: 'Penalty Recovery',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Hospedagem Segura e Suporte',
+    description: 'Hospedagem confiável e suporte técnico para manter o seu site sempre no ar. ',
     icon: '/assets/icons/ic_file.svg',
   },
 ];
@@ -50,7 +50,7 @@ export default function MarketingServicesInclude() {
         pb: { xs: 10, md: 15 },
       }}
     >
-      <Typography variant="h2">Services Include</Typography>
+      <Typography variant="h2">Nossos serviços incluem</Typography>
 
       <Typography
         sx={{
@@ -61,9 +61,9 @@ export default function MarketingServicesInclude() {
           mb: { xs: 8, md: 10 },
         }}
       >
-        Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+        Oferecemos soluções completas para você ter um site profissional e impulsionar sua presença
+        online{' '}
       </Typography>
-
       <Box
         sx={{
           rowGap: 8,

@@ -1,11 +1,11 @@
+import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-import Label from 'src/components/label';
-import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import Image from 'src/components/image';
+import Label from 'src/components/label';
 
 import { IPricingMarketingProps } from 'src/types/pricing';
 
@@ -74,7 +74,7 @@ export default function PricingMarketingCard({ plan }: Props) {
         color={(premiumLicense && 'primary') || 'inherit'}
         variant={(basicLicense && 'outlined') || 'contained'}
       >
-        Choose Package
+        Escolher Plano
       </Button>
     </Card>
   );

@@ -1,11 +1,11 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -13,8 +13,8 @@ import Iconify from 'src/components/iconify';
 
 import { IBlogPostProps } from 'src/types/blog';
 
-import PostItem from './travel-latest-post-item';
 import PostItemMobile from '../common/post-item-mobile';
+import PostItem from './travel-latest-post-item';
 
 // ----------------------------------------------------------------------
 
@@ -52,7 +52,7 @@ export default function TravelLatestPosts({ posts }: Props) {
             mb: { xs: 8, md: 10 },
           }}
         >
-          <Typography variant="h3">Latest Posts</Typography>
+          <Typography variant="h3">Veja nosso Portfolio</Typography>
 
           {mdUp && viewAllBtn}
         </Stack>

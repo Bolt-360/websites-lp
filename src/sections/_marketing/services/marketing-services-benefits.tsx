@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import { useResponsive } from 'src/hooks/use-responsive';
@@ -11,33 +11,33 @@ import Image from 'src/components/image';
 
 const BENEFITS = [
   {
-    title: 'Online Media',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Mídia Online',
+    description: 'Fortaleça a presença digital da sua marca e alcance mais pessoas nos principais canais da internet. ',
     iconColor: 'primary',
   },
   {
     title: 'Design',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    description: 'Criação de sites modernos e responsivos, com design exclusivo para destacar o seu negócio.',
     iconColor: 'success',
   },
   {
     title: 'Marketing',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    description: 'Integrações estratégicas para campanhas de marketing digital e geração de leads qualificados.',
     iconColor: 'secondary',
   },
   {
-    title: 'HR & Recruiting',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Velocidade e Desempenho',
+    description: 'Sites rápidos e otimizados para oferecer a melhor experiência aos seus visitantes. ',
     iconColor: 'secondary',
   },
   {
-    title: 'Management',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'SEO',
+    description: 'Apareça nas primeiras posições do Google e aumente o tráfego orgânico para o seu site. ',
     iconColor: 'success',
   },
   {
     title: 'Branding',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    description: 'Reforce a identidade da sua marca com um design alinhado à estratégia de comunicação visual. ',
     iconColor: 'primary',
   },
 ];
@@ -56,7 +56,7 @@ export default function MarketingServicesBenefits() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          Benefits Achieved
+        Beneficios alcançados
         </Typography>
 
         <Typography
@@ -69,7 +69,7 @@ export default function MarketingServicesBenefits() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+         Descubra as vantagens de ter um site profissional para a sua empresa. Aumente sua presença digital, conquiste novos clientes e impulsione seus resultados!
         </Typography>
 
         <Box

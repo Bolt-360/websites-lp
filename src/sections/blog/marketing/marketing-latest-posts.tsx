@@ -1,17 +1,17 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
+import Carousel, { CarouselArrows, CarouselDots, useCarousel } from 'src/components/carousel';
 import Iconify from 'src/components/iconify';
-import Carousel, { useCarousel, CarouselDots, CarouselArrows } from 'src/components/carousel';
 
 import { IBlogPostProps } from 'src/types/blog';
 
@@ -51,7 +51,7 @@ export default function MarketingLatestPosts({ posts }: Props) {
       color="inherit"
       endIcon={<Iconify icon="carbon:chevron-right" />}
     >
-      View All
+      Ver tudo
     </Button>
   );
 
@@ -66,7 +66,7 @@ export default function MarketingLatestPosts({ posts }: Props) {
         alignItems="center"
         justifyContent={{ xs: 'center', md: 'space-between' }}
       >
-        <Typography variant="h3">Latest Posts</Typography>
+        <Typography variant="h3">Veja nosso Portfolio</Typography>
 
         {mdUp && viewAllBtn}
       </Stack>

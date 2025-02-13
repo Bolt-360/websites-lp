@@ -1,23 +1,23 @@
-import { useState, useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import { inputClasses } from '@mui/material/Input';
-import { alpha, useTheme } from '@mui/material/styles';
+import Divider from '@mui/material/Divider';
 import { filledInputClasses } from '@mui/material/FilledInput';
+import { inputClasses } from '@mui/material/Input';
+import Stack from '@mui/material/Stack';
+import { alpha, useTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
 import { fShortenNumber } from 'src/utils/format-number';
 
 import { _brands } from 'src/_mock';
-import { bgGradient } from 'src/theme/css';
 import CareerHeroIllustration from 'src/assets/illustrations/career-hero-illustration';
+import { bgGradient } from 'src/theme/css';
 
 import Iconify from 'src/components/iconify';
 import SvgColor from 'src/components/svg-color';
@@ -221,16 +221,15 @@ export default function CareerLandingHero() {
             >
               <Stack spacing={3}>
                 <Typography variant="h1" sx={{ color: 'common.white' }}>
-                  Get The
+                  Transforme sua
                   <Box component="span" sx={{ color: 'primary.main' }}>
-                    {` Career `}
+                    {` Presença `}
                   </Box>
-                  You Deserve
+                  Digital
                 </Typography>
 
                 <Typography sx={{ color: 'grey.500' }}>
-                  Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
-                  venenatis ante odio sit amet eros.
+                Design moderno, SEO otimizado e alta performance – tudo em um só lugar! 
                 </Typography>
               </Stack>
 

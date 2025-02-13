@@ -1,24 +1,24 @@
 import { m } from 'framer-motion';
 
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
-import TextMaxLine from 'src/components/text-max-line';
 import { varHover, varTranHover } from 'src/components/animate';
+import Iconify from 'src/components/iconify';
+import Image from 'src/components/image';
+import TextMaxLine from 'src/components/text-max-line';
 
 import { ICaseStudyProps } from 'src/types/case-study';
 
@@ -113,7 +113,7 @@ export default function MarketingLandingCaseStudies({ caseStudies }: Props) {
           color="inherit"
           endIcon={<Iconify icon="carbon:chevron-right" />}
         >
-          View all
+          Ver tudo
         </Button>
       </Stack>
     </Container>

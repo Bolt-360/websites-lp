@@ -1,8 +1,8 @@
+import Container from '@mui/material/Container';
+import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
 
 import { _socials } from 'src/_mock';
 
@@ -33,8 +33,8 @@ export default function CareerContactInfo() {
         <Stack spacing={1}>
           <Typography variant="subtitle2">Email</Typography>
 
-          <Link variant="body2" color="inherit" href="mailto:hello@example.com">
-            hello@example.com
+          <Link variant="body2" color="inherit" href="contato@bolt360.com.br">
+           contato@bolt360.com.br
           </Link>
         </Stack>
 
