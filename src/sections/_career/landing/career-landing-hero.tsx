@@ -21,7 +21,6 @@ import SvgColor from 'src/components/svg-color';
 
 import { IJobFiltersProps } from 'src/types/job';
 
-
 // ----------------------------------------------------------------------
 
 type FiltersProps = Pick<IJobFiltersProps, 'filterKeyword' | 'filterLocation'>;
@@ -69,32 +68,49 @@ export default function CareerLandingHero() {
                 </Typography>
 
                 <Typography sx={{ color: 'grey.500' }}>
-                Na Bolt 360, criamos sites modernos, responsivos e otimizados para gerar leads, fortalecer sua marca e contribuições seus resultados.
+                  Na Bolt 360, criamos sites modernos, responsivos e otimizados para gerar leads,
+                  fortalecer sua marca e contribuições seus resultados.
                 </Typography>
               </Stack>
 
-              <Button sx={{
-                backgroundColor: 'primary.main',
-                color: 'common.white',
-                width: "100%",
-                height: "50px",
-                '&:hover': {
-                  backgroundColor: '#A63606',
-                }
-              }} >
+              <Button
+                sx={{
+                  backgroundColor: 'primary.main',
+                  color: 'common.white',
+                  width: '100%',
+                  height: '50px',
+                  animation: 'pulse 2s infinite',
+                  '@keyframes pulse': {
+                    '0%': {
+                      transform: 'scale(1)',
+                      boxShadow: '0 0 0 0 rgba(255, 87, 34, 0.7)',
+                    },
+                    '70%': {
+                      transform: 'scale(1.05)',
+                      boxShadow: '0 0 0 10px rgba(255, 87, 34, 0)',
+                    },
+                    '100%': {
+                      transform: 'scale(1)',
+                      boxShadow: '0 0 0 0 rgba(255, 87, 34, 0)',
+                    },
+                  },
+                  '&:hover': {
+                    backgroundColor: '#A63606',
+                  },
+                }}
+              >
                 Solicite um orçamento gratuito agora
               </Button>
-
-          </Stack>
-        </Grid>
-
-        {mdUp && (
-          <Grid xs={12} md={6} lg={6}>
-            <CareerHeroIllustration />
+            </Stack>
           </Grid>
-        )}
-      </Grid>
-    </Container>
-    </Box >
+
+          {mdUp && (
+            <Grid xs={12} md={6} lg={6}>
+              <CareerHeroIllustration />
+            </Grid>
+          )}
+        </Grid>
+      </Container>
+    </Box>
   );
 }

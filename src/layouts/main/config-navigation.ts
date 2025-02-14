@@ -83,10 +83,10 @@ export const pageLinks = [
 export const navConfig = [
   { title: 'Início', path: '/#inicio' },
   { title: 'Planos', path: '/#planos' },
-  {
+  /*{
     title: 'Mais',
     path: paths.pages,
     children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4]],
-  },
+  },*/
   { title: 'Blog', path: '/#blog' },
 ];

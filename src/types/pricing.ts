@@ -14,6 +14,7 @@ export type IPricingHomeProps = {
 export type IPricingMarketingProps = {
   license: string;
   price: string;
+  setup: string;
   caption: string;
   icon: string;
   options: string[];

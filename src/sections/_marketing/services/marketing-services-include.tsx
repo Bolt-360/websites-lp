@@ -9,7 +9,8 @@ import SvgColor from 'src/components/svg-color';
 const SERVICES = [
   {
     title: 'Perfomance e SEO',
-    description: 'Melhore o ranqueamento do seu site no Google e atraia mais visitantes de forma orgânica. ',
+    description:
+      'Melhore o ranqueamento do seu site no Google e atraia mais visitantes de forma orgânica. ',
     icon: '/assets/icons/ic_statistics.svg',
   },
   {
@@ -24,12 +25,14 @@ const SERVICES = [
   },
   {
     title: 'Gerenciamento de Conteúdo',
-    description: 'Sites prontos e atualizados para exibir as informações mais importantes do seu negócio. ',
+    description:
+      'Sites prontos e atualizados para exibir as informações mais importantes do seu negócio. ',
     icon: '/assets/icons/ic_checklist.svg',
   },
   {
     title: 'Conversão Eficiente',
-    description: 'Estrutura e call-to-actions estrategicamente posicionados para gerar leads e aumentar vendas.',
+    description:
+      'Estrutura e call-to-actions estrategicamente posicionados para gerar leads e aumentar vendas.',
     icon: '/assets/icons/ic_report.svg',
   },
   {
@@ -56,12 +59,15 @@ export default function MarketingServicesInclude() {
         sx={{
           mt: 3,
           mx: 'auto',
-          maxWidth: 500,
+          maxWidth: 1000,
           color: 'text.secondary',
           mb: { xs: 8, md: 10 },
         }}
       >
-        Com nosso serviço, você não recebe apenas um site – você ganha uma ferramenta poderosa para o crescimento do seu negócio. Nosso método, fundamentado no método exclusivo PPT (Pessoas, Processos e Tecnologia), garante que cada etapa da criação do seu site seja pensada para maximizar resultados.{' '}
+        Com nosso serviço, você não recebe apenas um site – você ganha uma ferramenta poderosa para
+        o crescimento do seu negócio. Nosso método, fundamentado no método exclusivo PPT (Pessoas,
+        Processos e Tecnologia), garante que cada etapa da criação do seu site seja pensada para
+        maximizar resultados.{' '}
       </Typography>
       <Box
         sx={{
