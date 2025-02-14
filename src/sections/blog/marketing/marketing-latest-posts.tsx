@@ -66,7 +66,7 @@ export default function MarketingLatestPosts({ posts }: Props) {
         alignItems="center"
         justifyContent={{ xs: 'center', md: 'space-between' }}
       >
-        <Typography variant="h3">Veja nosso Portfolio</Typography>
+        <Typography variant="h3">Confira nosso Portfólio</Typography>
 
         {mdUp && viewAllBtn}
       </Stack>

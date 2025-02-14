@@ -41,18 +41,24 @@ export default function MarketingLandingFreeSEO() {
   const [email, setEmail] = useState('');
   const [url, setUrl] = useState('');
 
+  const params = new URLSearchParams();
+  params.append('name', name);
+  params.append('phone', phone);
+  params.append('email', email);
+  params.append('url', url);
+
   const onHandleSubmit = async () => {
     console.log(name, phone, email, url);
     try {
       const response = await fetch("https://n8n2.bchat.lat/webhook/landing-page", {
         method: 'POST',
-        body: JSON.stringify({
-          name,
-          phone,
-          email,
-          url
-        })
+        body: params
       })
+
+      setName('');
+      setPhone('');
+      setEmail('');
+      setUrl('');
 
       if (!response.ok) {
         throw new Error('Erro ao enviar os dados')
@@ -107,7 +113,7 @@ export default function MarketingLandingFreeSEO() {
               <Iconify icon="carbon:email" width={24} sx={{ mr: 2 }} />
 
               <Link color="inherit" href="contato@bolt360.com.br">
-              contato@bolt360.com.br
+                contato@bolt360.com.br
               </Link>
             </Stack>
 
@@ -124,16 +130,16 @@ export default function MarketingLandingFreeSEO() {
 
           <Grid xs={12} md={5}>
             <Stack alignItems={{ xs: 'center', md: 'flex-start' }}>
-              <StyledInput label="Nome" sx={{ mb: 2.5 }} value={name} onChange={(e) => setName(e.target.value)}/>
+              <StyledInput label="Nome" sx={{ mb: 2.5 }} value={name} onChange={(e) => setName(e.target.value)} />
 
-              <StyledInput label="Telefone" sx={{ mb: 2.5 }} value={phone} onChange={(e) => setPhone(e.target.value)}/>
+              <StyledInput label="Telefone" sx={{ mb: 2.5 }} value={phone} onChange={(e) => setPhone(e.target.value)} />
 
-              <StyledInput label="Email" sx={{ mb: 2.5 }} value={email} onChange={(e) => setEmail(e.target.value)}/>
+              <StyledInput label="Email" sx={{ mb: 2.5 }} value={email} onChange={(e) => setEmail(e.target.value)} />
 
-              <StyledInput label="Website URL" sx={{ mb: 2.5 }} value={url} onChange={(e) => setUrl(e.target.value)}/>
+              <StyledInput label="Website URL" sx={{ mb: 2.5 }} value={url} onChange={(e) => setUrl(e.target.value)} />
 
               <Button size="large" variant="contained" color="primary" onClick={onHandleSubmit}>
-               Enviar
+                Enviar
               </Button>
             </Stack>
           </Grid>

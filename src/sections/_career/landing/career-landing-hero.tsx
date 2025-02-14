@@ -73,40 +73,7 @@ export default function CareerLandingHero() {
         justifyContent: { md: 'center' },
       }}
     >
-      <FilterKeyword
-        filterKeyword={filters.filterKeyword}
-        onChangeKeyword={handleChangeKeyword}
-        sx={{
-          bgcolor: 'transparent',
-          [`&:hover, &.${inputClasses.focused}`]: {
-            bgcolor: 'transparent',
-          },
-        }}
-      />
-
-      {mdUp && <Divider orientation="vertical" sx={{ height: 24 }} />}
-
-      <FilterLocation
-        filterLocation={filters.filterLocation}
-        onChangeLocation={handleChangeLocation}
-        sx={{
-          [`& .${filledInputClasses.root}`]: {
-            bgcolor: 'transparent',
-          },
-        }}
-      />
-
-      <Button
-        size="large"
-        variant="contained"
-        color="primary"
-        sx={{
-          px: 0,
-          minWidth: { xs: 1, md: 48 },
-        }}
-      >
-        <Iconify icon="carbon:search" width={24} />
-      </Button>
+      <Button sx={{ backgroundColor: 'primary.main', width: "100%", height: "100%" }}>Fale conosco</Button>
     </Stack>
   );
 
@@ -235,9 +202,6 @@ export default function CareerLandingHero() {
 
               {renderFilters}
 
-              {renderBrands}
-
-              {renderSummary}
             </Stack>
           </Grid>
 
