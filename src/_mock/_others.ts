@@ -102,11 +102,11 @@ export const _brandsColor = BRANDS_NAME.map((brand, index) => ({
 // ----------------------------------------------------------------------
 
 export const _faqs = [
-  'Sed augue ipsum, egestas nec, vestibulum et',
-  'alesuada adipiscing, dui vestibulum suscipit nulla quis orci.',
-  'Ut varius tincidunt libero',
-  'In ut quam vitae odio lacinia tincidunt.',
-  'Fusce vel dui Morbi nec metus.',
+  'Qual o prazo de entrega de um site?',
+  'Como funciona o suporte pós-lançamento?',
+  'Meu site será otimizado para dispositivos móveis e SEO?',
+  'Como a Bolt 360 garante a segurança do meu site?',
+  'Posso integrar o site ao meu próprio CRM',
 ].map((question, index) => ({
   id: _mock.id(index),
   question,

@@ -61,9 +61,6 @@ export default function Header({ headerOnDark }: Props) {
       </>
 
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
-        <Stack spacing={1} direction="row" alignItems="center">
-          <Searchbar />
-        </Stack>
 
         <Button
           variant="contained"

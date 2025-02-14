@@ -8,19 +8,19 @@ import SvgColor from 'src/components/svg-color';
 
 const SERVICES = [
   {
-    title: 'Otimização para Motores de Busca (SEO)',
+    title: 'Perfomance e SEO',
     description: 'Melhore o ranqueamento do seu site no Google e atraia mais visitantes de forma orgânica. ',
     icon: '/assets/icons/ic_statistics.svg',
   },
   {
-    title: 'Estratégia de Redes Sociais',
-    description: 'Conecte-se ao seu público com links integrados e direcionamento para suas redes sociais. ',
-    icon: '/assets/icons/ic_social_media.svg',
+    title: 'Integração Completa',
+    description: 'Conecte seu site a sistemas de e-mail marketing, CRM e analíticos.',
+    icon: '/assets/icons/ic_analysis.svg',
   },
   {
-    title: 'Monitoramento de Desempenho',
-    description: 'Acompanhe o desempenho do seu site para garantir uma experiência de alta qualidade. ',
-    icon: '/assets/icons/ic_real_time.svg',
+    title: 'Design Personalizado',
+    description: 'Um site que reflete a identidade única de sua marca.',
+    icon: '/assets/icons/ic_sketch_design.svg',
   },
   {
     title: 'Gerenciamento de Conteúdo',
@@ -28,8 +28,8 @@ const SERVICES = [
     icon: '/assets/icons/ic_checklist.svg',
   },
   {
-    title: 'Relatórios de Desempenho',
-    description: 'Receba relatórios periódicos sobre o tráfego e as métricas do seu site ',
+    title: 'Conversão Eficiente',
+    description: 'Estrutura e call-to-actions estrategicamente posicionados para gerar leads e aumentar vendas.',
     icon: '/assets/icons/ic_report.svg',
   },
   {
