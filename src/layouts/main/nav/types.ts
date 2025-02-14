@@ -25,11 +25,22 @@ export type NavItemStateProps = {
   externalLink?: boolean;
 };
 
-export type NavItemProps = ListItemButtonProps & NavItemBaseProps & NavItemStateProps;
+export interface NavItemProps extends NavItemStateProps {
+  title: string;
+  path: string;
+  subItem?: boolean;
+  hasChild?: boolean;
+  externalLink?: boolean;
+  open?: boolean;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+  onLinkClick?: (event: React.MouseEvent<HTMLAnchorElement>, path: string) => void;
+}
 
-export type NavListProps = {
+export interface NavListProps {
   data: NavItemBaseProps;
-};
+  onLinkClick?: (event: React.MouseEvent<HTMLAnchorElement>, path: string) => void;
+}
 
 export type NavSubListProps = {
   subheader: string;

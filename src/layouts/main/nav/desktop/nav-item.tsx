@@ -13,7 +13,13 @@ import { NavItemProps, NavItemStateProps } from '../types';
 // ----------------------------------------------------------------------
 
 const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
-  ({ title, path, open, active, subItem, hasChild, externalLink, ...other }, ref) => {
+  ({ title, path, open, active, subItem, hasChild, externalLink, onLinkClick, ...other }, ref) => {
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+      if (onLinkClick && path.includes('#')) {
+        onLinkClick(event, path);
+      }
+    };
+
     const renderContent = (
       <StyledNavItem
         disableRipple
@@ -43,7 +49,13 @@ const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
     }
 
     return (
-      <Link component={RouterLink} href={path} color="inherit" underline="none">
+      <Link
+        component={RouterLink}
+        href={path}
+        color="inherit"
+        underline="none"
+        onClick={handleClick}
+      >
         {renderContent}
       </Link>
     );

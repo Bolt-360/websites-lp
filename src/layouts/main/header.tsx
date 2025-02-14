@@ -23,7 +23,6 @@ import { HEADER } from '../config-layout';
 import Searchbar from '../common/searchbar';
 import { navConfig } from './config-navigation';
 import HeaderShadow from '../common/header-shadow';
-import SettingsButton from '../common/settings-button';
 
 // ----------------------------------------------------------------------
 
@@ -64,21 +63,23 @@ export default function Header({ headerOnDark }: Props) {
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
         <Stack spacing={1} direction="row" alignItems="center">
           <Searchbar />
-
-          <SettingsButton />
         </Stack>
 
         <Button
           variant="contained"
           color="inherit"
-          href={paths.zoneStore}
-          target="_blank"
-          rel="noopener"
+          onClick={(e) => {
+            e.preventDefault();
+            const section = document.querySelector('#fale-conosco');
+            if (section) {
+              section.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
           sx={{
             display: { xs: 'none', md: 'inline-flex' },
           }}
         >
-          Buy Now
+          Fale Conosco
         </Button>
       </Stack>
 

@@ -23,7 +23,7 @@ import { NavListProps, NavSubListProps } from '../types';
 
 // ----------------------------------------------------------------------
 
-export default function NavList({ data }: NavListProps) {
+export default function NavList({ data, onLinkClick }: NavListProps) {
   const pathname = usePathname();
 
   const menuOpen = useBoolean();
@@ -31,10 +31,6 @@ export default function NavList({ data }: NavListProps) {
   const active = useActiveLink(data.path, !!data.children);
 
   const mainList = data.children ? data.children.filter((list) => list.subheader !== 'Common') : [];
-
-  const commonList = data.children
-    ? data.children.find((list) => list.subheader === 'Common')
-    : null;
 
   useEffect(() => {
     if (menuOpen.value) {
@@ -62,6 +58,7 @@ export default function NavList({ data }: NavListProps) {
         active={active}
         hasChild={!!data.children}
         externalLink={data.path.includes('http')}
+        onLinkClick={onLinkClick}
       />
 
       {!!data.children && menuOpen.value && (
@@ -81,7 +78,7 @@ export default function NavList({ data }: NavListProps) {
               }}
             >
               <Grid container columns={15}>
-                <Grid xs={12}>
+                <Grid xs={15}>
                   <Box
                     gap={5}
                     display="grid"
@@ -104,14 +101,6 @@ export default function NavList({ data }: NavListProps) {
                     ))}
                   </Box>
                 </Grid>
-
-                {commonList && (
-                  <Grid xs={3}>
-                    <Box sx={{ bgcolor: 'background.default', p: 5 }}>
-                      <NavSubList subheader={commonList.subheader} items={commonList.items} />
-                    </Box>
-                  </Grid>
-                )}
               </Grid>
             </Paper>
           </Fade>
@@ -127,8 +116,6 @@ function NavSubList({ subheader, isNew, cover, items }: NavSubListProps) {
   const pathname = usePathname();
 
   const coverPath = items.length ? items[0].path : '';
-
-  const commonList = subheader === 'Common';
 
   return (
     <Stack spacing={2}>
@@ -148,26 +135,7 @@ function NavSubList({ subheader, isNew, cover, items }: NavSubListProps) {
         )}
       </ListSubheader>
 
-      {!commonList && (
-        <Link component={RouterLink} href={coverPath}>
-          <Image
-            disabledEffect
-            alt={cover}
-            src={cover || '/assets/placeholder.svg'}
-            ratio="16/9"
-            sx={{
-              borderRadius: 1,
-              cursor: 'pointer',
-              boxShadow: (theme) => theme.customShadows.z8,
-              transition: (theme) => theme.transitions.create('all'),
-              '&:hover': {
-                opacity: 0.8,
-                boxShadow: (theme) => theme.customShadows.z24,
-              },
-            }}
-          />
-        </Link>
-      )}
+      <Link component={RouterLink} href={coverPath}></Link>
 
       <Stack spacing={1.5} alignItems="flex-start">
         {items.map((item) => {
