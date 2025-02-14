@@ -16,11 +16,11 @@ type Props = {
 };
 
 export default function PricingMarketingCard({ plan }: Props) {
-  const basicLicense = plan.license === 'Basic';
+  const basicLicense = plan.license === 'MEI';
 
-  const starterLicense = plan.license === 'Starter';
+  const starterLicense = plan.license === 'PRO';
 
-  const premiumLicense = plan.license === 'Premium';
+  const premiumLicense = plan.license === 'SEO';
 
   return (
     <Card
@@ -48,7 +48,7 @@ export default function PricingMarketingCard({ plan }: Props) {
           <Stack direction="row" alignItems="center" spacing={0.5}>
             <Typography variant="h3" component="span">{`$${plan.price}`}</Typography>
             <Typography variant="h5" component="span" sx={{ color: 'text.disabled' }}>
-              /mo
+              /mês
             </Typography>
           </Stack>
         </div>

@@ -20,7 +20,7 @@ export const _testimonials = [...Array(8)].map((_, index) => ({
   createdAt: _mock.time(index),
   ratingNumber: 5,
   review:
-    'Uma experiência incrível, amo o serviço, muito obrigado ao time que sonhos se tornam realidade, adorei a atitude e o enfoque.',
+    'Desde o lançamento do nosso novo site com a Bolt 360, nossa taxa de conversão aumentou 40%. A equipe realmente entende como gerar resultado através da presença digital!',
 }));
 
 // ----------------------------------------------------------------------

@@ -64,7 +64,8 @@ export default function MarketingServicesHowItWork() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-        Como Funciona        </Typography>
+          Nossas Etapas
+        </Typography>
 
         <Typography
           sx={{
@@ -76,7 +77,7 @@ export default function MarketingServicesHowItWork() {
             mb: { xs: 8, md: 10 },
           }}
         >
-        Saiba como desenvolvemos o site perfeito para o seu negócio em quatro etapas simples.
+          Saiba como desenvolvemos o site perfeito para o seu negócio em quatro etapas simples.
         </Typography>
 
         <Timeline position={mdUp ? 'alternate' : 'right'}>

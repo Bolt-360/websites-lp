@@ -56,17 +56,20 @@ export default function CareerLandingHero() {
                 textAlign: { xs: 'center', md: 'unset' },
               }}
             >
-              <Stack spacing={3} sx={{ marginTop: '70px' }}>
+              <Stack spacing={3} sx={{ marginTop: '30px' }}>
                 <Typography variant="h1" sx={{ color: 'common.white' }}>
                   Transforme sua
                   <Box component="span" sx={{ color: 'primary.main' }}>
                     {` Presença `}
                   </Box>
-                  Digital
+                  Digital com um Site que
+                  <Box component="span" sx={{ color: 'primary.main' }}>
+                    {` Converte `}
+                  </Box>
                 </Typography>
 
                 <Typography sx={{ color: 'grey.500' }}>
-                  Design moderno, SEO otimizado e alta performance – tudo em um só lugar!
+                Na Bolt 360, criamos sites modernos, responsivos e otimizados para gerar leads, fortalecer sua marca e contribuições seus resultados.
                 </Typography>
               </Stack>
 
@@ -79,7 +82,7 @@ export default function CareerLandingHero() {
                   backgroundColor: '#A63606',
                 }
               }} >
-                Fale conosco
+                Solicite um orçamento gratuito agora
               </Button>
 
           </Stack>

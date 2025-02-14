@@ -40,21 +40,24 @@ export default function MarketingLandingView() {
       </div>
       <ElearningOurClients brands={_brandsColor} />
 
-      <MarketingServicesInclude />
-
       <MarketingServicesBenefits />
 
+      <MarketingServicesInclude />
+
       <MarketingServicesHowItWork />
+
+      <ElearningTestimonial testimonials={_testimonials} />
 
       <div id="planos">
         <PricingMarketing plans={_pricingMarketing} />
       </div>
 
-      <ElearningTestimonial testimonials={_testimonials} />
+      <MarketingLandingFaqs />
 
       <div id="blog">
         <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
       </div>
+
       <div id="fale-conosco">
         <MarketingLandingFreeSEO />
       </div>
