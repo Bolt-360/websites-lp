@@ -51,6 +51,7 @@ export const _pricingMarketing = [
   {
     license: 'MEI',
     price: '147',
+    setup: '499',
     icon: '/assets/icons/pricing/ic_plan_basic03.svg',
     caption: 'Ideal para quem está começando. Simples e eficiente para criar sua presença online.',
     options: ['Sites com até 5 páginas',
@@ -62,6 +63,7 @@ export const _pricingMarketing = [
   {
     license: 'PRO',
     price: '197',
+    setup: '970',
     icon: '/assets/icons/pricing/ic_plan_starter03.svg',
     caption: 'Ideal para quem já tem uma base de clientes e deseja expandir sua presença online.',
     options: [
@@ -75,6 +77,7 @@ export const _pricingMarketing = [
   {
     license: 'SEO',
     price: '1570',
+    setup: '1470',
     icon: '/assets/icons/pricing/ic_plan_premium03.svg',
     caption: 'Solução Premium para empresas que desejam destacar-se no mercado.',
     options: [

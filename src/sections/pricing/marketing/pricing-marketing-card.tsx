@@ -46,10 +46,16 @@ export default function PricingMarketingCard({ plan }: Props) {
           </Typography>
 
           <Stack direction="row" alignItems="center" spacing={0.5}>
-            <Typography variant="h3" component="span">{`$${plan.price}`}</Typography>
+            <Typography variant="h3" component="span">{`R$${plan.price}`}</Typography>
             <Typography variant="h5" component="span" sx={{ color: 'text.disabled' }}>
               /mês
             </Typography>
+          </Stack>
+          <Stack direction="row" alignItems="center" spacing={0.5}>
+            <Typography variant="h6" component="span" sx={{ color: 'text.disabled' }}>
+              Setup de
+            </Typography>
+            <Typography variant="h6" component="span">{`R$${plan.setup}`}</Typography>
           </Stack>
         </div>
 

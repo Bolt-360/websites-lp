@@ -70,7 +70,7 @@ export default function MarketingServicesBenefits() {
             mt: 3,
             mx: 'auto',
             opacity: 0.72,
-            maxWidth: 480,
+            maxWidth: 800,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
           }}
@@ -85,14 +85,15 @@ export default function MarketingServicesBenefits() {
             display: 'grid',
             alignItems: 'center',
             gap: { xs: 4, md: 8 },
-            gridTemplateColumns: { md: 'repeat(3, 1fr)' },
+            gridTemplateColumns: { md: 'repeat(2, 1fr)' },
           }}
         >
-          <Stack spacing={{ xs: 4, md: 10 }}></Stack>
-
-          {mdUp && <Image alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />}
-
-          <Stack spacing={{ xs: 4, md: 10 }}></Stack>
+          {mdUp && (
+            <>
+              <Image alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />
+              <Image alt="benefits 2" src="/assets/illustrations/illustration_benefits.svg" />
+            </>
+          )}
         </Box>
       </Container>
     </Box>
