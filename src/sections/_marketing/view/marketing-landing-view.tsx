@@ -52,8 +52,6 @@ export default function MarketingLandingView() {
       <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
 
       <MarketingLandingFreeSEO />
-
-      <MarketingNewsletter />
     </>
   );
 }

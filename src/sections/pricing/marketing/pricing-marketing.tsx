@@ -38,10 +38,10 @@ export default function PricingMarketing({ plans }: Props) {
           }}
         >
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-            Pricing
+            Valores
           </Typography>
 
-          <Typography variant="h2">Preços</Typography>
+          <Typography variant="h2">Planos</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
             Escolha o plano perfeito para suas necessidades.

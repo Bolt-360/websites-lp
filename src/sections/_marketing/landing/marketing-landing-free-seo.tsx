@@ -13,6 +13,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { bgGradient } from 'src/theme/css';
 
 import Iconify from 'src/components/iconify';
+import { useState } from 'react';
+import PostAuthor from 'src/sections/blog/common/post-author';
 
 // ----------------------------------------------------------------------
 
@@ -34,6 +36,33 @@ const StyledInput = styled((props: TextFieldProps) => <TextField fullWidth {...p
 
 export default function MarketingLandingFreeSEO() {
   const theme = useTheme();
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [url, setUrl] = useState('');
+
+  const onHandleSubmit = async () => {
+    console.log(name, phone, email, url);
+    try {
+      const response = await fetch("https://n8n2.bchat.lat/webhook/landing-page", {
+        method: 'POST',
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          url
+        })
+      })
+
+      if (!response.ok) {
+        throw new Error('Erro ao enviar os dados')
+      } else {
+        console.log('Dados enviados com sucesso')
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <Box
@@ -66,7 +95,7 @@ export default function MarketingLandingFreeSEO() {
               }}
             >
               Obtenha uma
-              <br /> Análise gratis do seu Site
+              <br /> análise gratuita do seu Site
             </Typography>
 
             <Stack
@@ -89,17 +118,21 @@ export default function MarketingLandingFreeSEO() {
               sx={{ color: 'common.white' }}
             >
               <Iconify icon="carbon:location" width={24} sx={{ mr: 2 }} />
-             Rua Tereza Bezerra Salustino 1902 Natal Lagoa nova
+              Rua Tereza Bezerra Salustino 1902 Lagoa nova, Natal
             </Stack>
           </Grid>
 
           <Grid xs={12} md={5}>
             <Stack alignItems={{ xs: 'center', md: 'flex-start' }}>
-              <StyledInput label="Nome" sx={{ mb: 2.5 }} />
+              <StyledInput label="Nome" sx={{ mb: 2.5 }} value={name} onChange={(e) => setName(e.target.value)}/>
 
-              <StyledInput label="Telefone" sx={{ mb: 2.5 }} />
+              <StyledInput label="Telefone" sx={{ mb: 2.5 }} value={phone} onChange={(e) => setPhone(e.target.value)}/>
 
-              <Button size="large" variant="contained" color="primary">
+              <StyledInput label="Email" sx={{ mb: 2.5 }} value={email} onChange={(e) => setEmail(e.target.value)}/>
+
+              <StyledInput label="Website URL" sx={{ mb: 2.5 }} value={url} onChange={(e) => setUrl(e.target.value)}/>
+
+              <Button size="large" variant="contained" color="primary" onClick={onHandleSubmit}>
                Enviar
               </Button>
             </Stack>
