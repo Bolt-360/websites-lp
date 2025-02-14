@@ -42,7 +42,7 @@ export default function Header({ headerOnDark }: Props) {
       <Box sx={{ lineHeight: 0, position: 'relative' }}>
         <Logo />
 
-        <Link href="https://zone-docs.vercel.app/changelog" target="_blank" rel="noopener"></Link>
+        <Link href="/home" target="_blank" rel="noopener"></Link>
       </Box>
 
       <>
