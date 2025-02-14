@@ -49,39 +49,40 @@ export const _pricingHome = [
 
 export const _pricingMarketing = [
   {
-    license: 'Básico',
-    price: '29',
+    license: 'MEI',
+    price: '147',
     icon: '/assets/icons/pricing/ic_plan_basic03.svg',
     caption: 'Ideal para quem está começando. Simples e eficiente para criar sua presença online.',
-    options: ['Site One Page', 'Hospedagem', 'Suporte'],
-  },
-  {
-    license: 'Intermediário',
-    price: '59',
-    icon: '/assets/icons/pricing/ic_plan_starter03.svg',
-    caption: 'Ideal para quem já tem uma base de clientes e deseja expandir sua presença online.',
-    options: [
-      'Site com ate 5 páginas',
-      'Formulário de contato Personalizado',
-      'Otimização para SEO avançada',
-      'Google analitycs integrado',
-      'Suporte via BChat e email',
-      'Integração com redes sociais',
+    options: ['Sites com até 5 páginas',
+      'Formulário de contato',
+      'Integração com redes sociais',	
+      'Suporte via ticket'
     ],
   },
   {
-    license: 'Premium',
-    price: '99',
+    license: 'PRO',
+    price: '197',
+    icon: '/assets/icons/pricing/ic_plan_starter03.svg',
+    caption: 'Ideal para quem já tem uma base de clientes e deseja expandir sua presença online.',
+    options: [
+      'Site com ate 10 páginas',
+      'Formulário de contato Personalizado',
+      'Preparação para SEO',
+      'Integração com redes sociais',
+      'Suporte via chamado',
+    ],
+  },
+  {
+    license: 'SEO',
+    price: '1570',
     icon: '/assets/icons/pricing/ic_plan_premium03.svg',
     caption: 'Solução Premium para empresas que desejam destacar-se no mercado.',
     options: [
-      'Site com ate 10 páginas',
-      'Loja virtual (ate 30 produtos)',
-      'Blog integrado',
+      'Otimização avançada para SEO',
+      'Criação de conteúdo otimizado',
+      'Análise mensal de desempenho',
       'Suporte prioritário',
       'Manutenção mensal inclusa',
-      'Otimização de perfomance(velocidade do site)',
-      'Hospedagem com backup',
     ],
   },
 ];

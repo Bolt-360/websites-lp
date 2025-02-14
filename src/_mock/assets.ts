@@ -111,7 +111,7 @@ export const _emails = [
 // ----------------------------------------------------------------------
 
 export const _fullNames = [
-  'Jayvion Simon',
+  'Luana Silva',
   'Lucian Obrien',
   'Deja Brady',
   'Harrison Stein',
@@ -119,22 +119,6 @@ export const _fullNames = [
   'Lainey Davidson',
   'Cristopher Cardenas',
   'Melanie Noble',
-  'Chase Day',
-  'Shawn Manning',
-  'Soren Durham',
-  'Cortez Herring',
-  'Brycen Jimenez',
-  'Giana Brandt',
-  'Aspen Schmitt',
-  'Colten Aguilar',
-  'Angelique Morse',
-  'Selina Boyer',
-  'Lawson Bass',
-  'Ariana Lang',
-  'Amiah Pruitt',
-  'Harold Mcgrath',
-  'Esperanza Mcintyre',
-  'Mireya Conner',
 ];
 
 export const _firstNames = [
@@ -258,30 +242,14 @@ export const _phoneNumbers = [
 // ----------------------------------------------------------------------
 
 export const _roles = [
-  'HR Manager',
-  'Data Analyst',
-  'Legal Counsel',
-  'UX/UI Designer',
+  'Gerente Comercial',
   'Project Manager',
-  'Account Manager',
-  'Registered Nurse',
-  'Business Analyst',
-  'Creative Director',
   'Financial Planner',
   'Event Coordinator',
   'Marketing Director',
   'Software Developer',
-  'Research Scientist',
-  'Content Strategist',
-  'Operations Manager',
-  'Sales Representative',
-  'Supply Chain Analyst',
-  'Operations Coordinator',
-  'Customer Service Associate',
-  'Quality Assurance Specialist',
   'CEO',
-  'CFO',
-  'CTO',
+  'CTO'
 ];
 
 // ----------------------------------------------------------------------

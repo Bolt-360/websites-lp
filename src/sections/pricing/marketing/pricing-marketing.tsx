@@ -48,14 +48,6 @@ export default function PricingMarketing({ plans }: Props) {
             <br /> Sempre flexível para crescer
           </Typography>
         </Stack>
-
-        <Stack direction="row" alignItems="center">
-          <Typography variant="overline">MENSAL</Typography>
-
-          <Switch defaultChecked />
-
-          <Typography variant="overline">ANUAL (economize 10%)</Typography>
-        </Stack>
       </Stack>
 
       <Box
@@ -73,6 +65,12 @@ export default function PricingMarketing({ plans }: Props) {
           <PlanCard key={plan.license} plan={plan} />
         ))}
       </Box>
+
+      <Typography variant="overline" >
+        <Typography variant='h6' sx={{color: "primary.main"}}>Serviços Adicionais:</Typography>
+         Hospedagem, registro de domínio e certificados SSL podem ser contratados separadamente, conforme a necessidade.
+      </Typography>
+
     </Container>
   );
 }

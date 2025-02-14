@@ -20,7 +20,7 @@ export const _testimonials = [...Array(8)].map((_, index) => ({
   createdAt: _mock.time(index),
   ratingNumber: 5,
   review:
-    'Uma experiência incrível, amo o serviço, muito obrigado ao time que sonhos se tornam realidade, adorei a atitude e o enfoque.',
+    'Desde o lançamento do nosso novo site com a Bolt 360, nossa taxa de conversão aumentou 40%. A equipe realmente entende como gerar resultado através da presença digital!',
 }));
 
 // ----------------------------------------------------------------------
@@ -102,11 +102,11 @@ export const _brandsColor = BRANDS_NAME.map((brand, index) => ({
 // ----------------------------------------------------------------------
 
 export const _faqs = [
-  'Sed augue ipsum, egestas nec, vestibulum et',
-  'alesuada adipiscing, dui vestibulum suscipit nulla quis orci.',
-  'Ut varius tincidunt libero',
-  'In ut quam vitae odio lacinia tincidunt.',
-  'Fusce vel dui Morbi nec metus.',
+  'Qual o prazo de entrega de um site?',
+  'Como funciona o suporte pós-lançamento?',
+  'Meu site será otimizado para dispositivos móveis e SEO?',
+  'Como a Bolt 360 garante a segurança do meu site?',
+  'Posso integrar o site ao meu próprio CRM',
 ].map((question, index) => ({
   id: _mock.id(index),
   question,

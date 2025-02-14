@@ -43,7 +43,9 @@ export default function MarketingLandingFaqs() {
               FAQS
             </Typography>
 
-            <Typography variant="h2">Frequently Asked Questions</Typography>
+            <Typography variant="h2">
+              Tem Alguma Dúvida? Estamos Aqui para Ajudar!
+            </Typography>
           </Stack>
 
           {_faqs.map((faq) => (
