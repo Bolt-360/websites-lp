@@ -14,7 +14,7 @@ type Props = BoxProps & {
 
 export default function MainLayout({
   children,
-  headerOnDark = false,
+  headerOnDark = true,
   disabledSpacing = false,
   sx,
   ...other

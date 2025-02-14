@@ -35,23 +35,29 @@ import ElearningTestimonial from 'src/sections/_elearning/testimonial/elearning-
 export default function MarketingLandingView() {
   return (
     <>
-       <CareerLandingHero />
+      <div id="inicio">
+        <CareerLandingHero />
+      </div>
+      <ElearningOurClients brands={_brandsColor} />
 
-       <ElearningOurClients brands={_brandsColor} />
+      <MarketingServicesInclude />
 
-       <MarketingServicesInclude />
+      <MarketingServicesBenefits />
 
-       <MarketingServicesBenefits />
+      <MarketingServicesHowItWork />
 
-       <MarketingServicesHowItWork />
-
-      <PricingMarketing plans={_pricingMarketing} />
+      <div id="planos">
+        <PricingMarketing plans={_pricingMarketing} />
+      </div>
 
       <ElearningTestimonial testimonials={_testimonials} />
 
-      <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
-
-      <MarketingLandingFreeSEO />
+      <div id="blog">
+        <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
+      </div>
+      <div id="fale-conosco">
+        <MarketingLandingFreeSEO />
+      </div>
     </>
   );
 }
