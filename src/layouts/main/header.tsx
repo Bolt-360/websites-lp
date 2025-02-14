@@ -7,15 +7,12 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
-
 import { useOffSetTop } from 'src/hooks/use-off-set-top';
 import { useResponsive } from 'src/hooks/use-responsive';
 
 import { bgBlur } from 'src/theme/css';
 
 import Logo from 'src/components/logo';
-import Label from 'src/components/label';
 
 import NavMobile from './nav/mobile';
 import NavDesktop from './nav/desktop';
@@ -40,7 +37,7 @@ export default function Header({ headerOnDark }: Props) {
   const renderContent = (
     <>
       <Box sx={{ lineHeight: 0, position: 'relative' }}>
-        <Logo />
+        <Logo headerOnDark={headerOnDark && !offset} />
 
         <Link href="/home" target="_blank" rel="noopener"></Link>
       </Box>

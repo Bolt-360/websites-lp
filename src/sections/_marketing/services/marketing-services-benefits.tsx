@@ -12,32 +12,38 @@ import Image from 'src/components/image';
 const BENEFITS = [
   {
     title: 'Mídia Online',
-    description: 'Fortaleça a presença digital da sua marca e alcance mais pessoas nos principais canais da internet. ',
+    description:
+      'Fortaleça a presença digital da sua marca e alcance mais pessoas nos principais canais da internet. ',
     iconColor: 'primary',
   },
   {
     title: 'Design',
-    description: 'Criação de sites modernos e responsivos, com design exclusivo para destacar o seu negócio.',
+    description:
+      'Criação de sites modernos e responsivos, com design exclusivo para destacar o seu negócio.',
     iconColor: 'success',
   },
   {
     title: 'Marketing',
-    description: 'Integrações estratégicas para campanhas de marketing digital e geração de leads qualificados.',
+    description:
+      'Integrações estratégicas para campanhas de marketing digital e geração de leads qualificados.',
     iconColor: 'secondary',
   },
   {
     title: 'Velocidade e Desempenho',
-    description: 'Sites rápidos e otimizados para oferecer a melhor experiência aos seus visitantes. ',
+    description:
+      'Sites rápidos e otimizados para oferecer a melhor experiência aos seus visitantes. ',
     iconColor: 'secondary',
   },
   {
     title: 'SEO',
-    description: 'Apareça nas primeiras posições do Google e aumente o tráfego orgânico para o seu site. ',
+    description:
+      'Apareça nas primeiras posições do Google e aumente o tráfego orgânico para o seu site. ',
     iconColor: 'success',
   },
   {
     title: 'Branding',
-    description: 'Reforce a identidade da sua marca com um design alinhado à estratégia de comunicação visual. ',
+    description:
+      'Reforce a identidade da sua marca com um design alinhado à estratégia de comunicação visual. ',
     iconColor: 'primary',
   },
 ];
@@ -56,7 +62,7 @@ export default function MarketingServicesBenefits() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-        Beneficios alcançados
+          Por Que um Site Profissional é Essencial?
         </Typography>
 
         <Typography
@@ -69,7 +75,9 @@ export default function MarketingServicesBenefits() {
             mb: { xs: 8, md: 10 },
           }}
         >
-         Descubra as vantagens de ter um site profissional para a sua empresa. Aumente sua presença digital, conquiste novos clientes e impulsione seus resultados!
+          A presença online da sua empresa comunica para o mundo quem ela é! Um site profissional e
+          otimizado além de gerar confiança, transforma visitantes em clientes, impulsionando suas
+          vendas e fortalecendo sua marca.
         </Typography>
 
         <Box
@@ -80,19 +88,11 @@ export default function MarketingServicesBenefits() {
             gridTemplateColumns: { md: 'repeat(3, 1fr)' },
           }}
         >
-          <Stack spacing={{ xs: 4, md: 10 }}>
-            {BENEFITS.slice(0, 3).map((benefit, index) => (
-              <BenefitItem key={benefit.title} benefit={benefit} index={index} reverse />
-            ))}
-          </Stack>
+          <Stack spacing={{ xs: 4, md: 10 }}></Stack>
 
           {mdUp && <Image alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />}
 
-          <Stack spacing={{ xs: 4, md: 10 }}>
-            {BENEFITS.slice(-3).map((benefit, index) => (
-              <BenefitItem key={benefit.title} benefit={benefit} index={index} />
-            ))}
-          </Stack>
+          <Stack spacing={{ xs: 4, md: 10 }}></Stack>
         </Box>
       </Container>
     </Box>

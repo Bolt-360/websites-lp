@@ -11,19 +11,23 @@ import Image from 'next/image';
 
 interface LogoProps extends BoxProps {
   single?: boolean;
+  headerOnDark?: boolean;
 }
 
-function Logo({ single = false, sx }: LogoProps) {
+function Logo({ single = false, headerOnDark = false, sx }: LogoProps) {
   const theme = useTheme();
 
   const PRIMARY_MAIN = theme.palette.primary.main;
 
-  const singleLogo = (
-    <Image src="/singleBolt.png" alt='Bolt Assessoria' width={80} height={60}/>
-  );
+  const singleLogo = <Image src="/singleBolt.png" alt="Bolt Assessoria" width={80} height={60} />;
 
   const fullLogo = (
-    <Image src="/bolt.png" alt='Bolt Assessoria' width={90} height={45}/>
+    <Image
+      src={headerOnDark ? '/bolt-white.png' : '/bolt.png'}
+      alt="Bolt Assessoria"
+      width={90}
+      height={45}
+    />
   );
 
   return (
