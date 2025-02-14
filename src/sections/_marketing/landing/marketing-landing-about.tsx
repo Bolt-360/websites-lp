@@ -1,15 +1,15 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import { fShortenNumber } from 'src/utils/format-number';
 
-import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ export default function MarketingLandingAbout() {
     >
       <Image
         alt="landing about"
-        src="/assets/images/marketing/marketing_post_hero.jpg"
+        src="/assets/images/marketing/pensar-clube.png"
         ratio="16/9"
         sx={{
           borderRadius: 1.5,

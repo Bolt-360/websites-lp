@@ -1,31 +1,31 @@
 import { sub } from 'date-fns';
 
 import {
-  _id,
   _ages,
-  _roles,
+  _booleans,
+  _companyNames,
+  _courseTitle,
+  _descriptions,
   _emails,
-  _prices,
+  _firstNames,
+  _fullAddress,
+  _fullNames,
+  _id,
+  _jobTitles,
+  _lastNames,
   _nativeL,
   _nativeM,
   _nativeS,
-  _ratings,
-  _booleans,
   _percents,
-  _taskNames,
-  _jobTitles,
-  _tourNames,
-  _fullNames,
-  _lastNames,
-  _sentences,
-  _firstNames,
-  _postTitles,
-  _courseTitle,
-  _fullAddress,
   _phoneNumbers,
-  _descriptions,
+  _postTitles,
+  _prices,
   _productNames,
-  _companyNames,
+  _ratings,
+  _roles,
+  _sentences,
+  _taskNames,
+  _tourNames,
 } from './assets';
 
 // ----------------------------------------------------------------------
@@ -72,7 +72,16 @@ export const _mock = {
     product: (index: number) => `/assets/images/z_product/product_${index + 1}.png`,
     portrait: (index: number) => `/assets/images/portrait/portrait_${index + 1}.jpg`,
     career: (index: number) => `/assets/images/career/career_${index + 1}.jpg`,
-    marketing: (index: number) => `/assets/images/marketing/marketing_${index + 1}.jpg`,
+    marketing: (index: number) => {
+      const marketingImages = [
+        '/assets/images/marketing/pensar-clube.png',
+        '/assets/images/marketing/smart.png',
+        '/assets/images/marketing/MEHELP.png  ',
+        '/assets/images/marketing/pegado.png',
+      ];
+      
+      return marketingImages[index] || `/assets/images/marketing/marketing_${index + 1}.jpg`;
+    },
     course: (index: number) => `/assets/images/course/course_${index + 1}.jpg`,
   },
   video: (index: number) =>

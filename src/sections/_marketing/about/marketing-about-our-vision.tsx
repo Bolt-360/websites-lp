@@ -1,11 +1,11 @@
+import Container from '@mui/material/Container';
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { alpha, styled, useTheme } from '@mui/material/styles';
 
-import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -68,7 +68,7 @@ export default function MarketingAboutOurVision() {
 
           <Image
             alt="hero"
-            src="/assets/images/marketing/marketing_post_01.jpg"
+            src="/assets/images/marketing/pensar-clube.png"
             ratio="16/9"
             overlay={`linear-gradient(to bottom, ${alpha(theme.palette.common.black, 0)} 0%, ${
               theme.palette.common.black

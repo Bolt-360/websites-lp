@@ -4,80 +4,71 @@ import { _tags } from './assets';
 // ----------------------------------------------------------------------
 
 const content = (name: string) => `
-<p>Pellentesque posuere. Phasellus a est. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.</p>
+<h4>A Pensar Clube - Especialistas em Rastreamento Veicular</h4>
 <br/>
 
-<p>Pellentesque posuere. Phasellus a est. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus viverra nulla ut metus varius laoreet. Praesent egestas tristique nibh. Donec posuere vulputate arcu. Quisque rutrum.</p>
+<p>A Pensar Clube é uma empresa especializada em monitoramento e rastreamento veicular, oferecendo soluções completas de segurança e gestão de frotas para empresas e particulares. Com anos de experiência no mercado, nos destacamos pela qualidade e confiabilidade dos nossos serviços.</p>
 <br/>
 
-<p>Donec posuere vulputate arcu. Quisque rutrum. Curabitur vestibulum aliquam leo. Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula.</p>
+<p>Em parceria com a Bolt 360, desenvolvemos uma presença digital moderna e intuitiva que permite à Pensar Clube expandir seu alcance e conectar-se de forma eficiente com seus clientes. Nossa solução digital foi cuidadosamente planejada para tornar o acesso aos serviços de rastreamento e monitoramento mais simples e direto.</p>
 <br/>
 
-<p>Pellentesque posuere. Phasellus a est. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus viverra nulla ut metus varius laoreet. Praesent egestas tristique nibh.</p>
-
-<br/>
-<br/>
-<br/>
-<p><img alt="alt marketing" src="/assets/images/${name}/${name}_post_01.jpg" /></p>
-<br/>
-<br/>
-<br/>
-
-<h4>Curabitur suscipit suscipit tellus</h4>
-<br/>
-
-<p>Donec posuere vulputate arcu. Quisque rutrum. Curabitur vestibulum aliquam leo. Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula.</p>
-<br/>
-
-<h4>Nullam accumsan lorem in</h4>
-<br/>
-
-<p>Donec posuere vulputate arcu. Quisque rutrum. Curabitur vestibulum aliquam leo. Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula.</p>
-<br/>
-
-<p>Donec posuere vulputate arcu. Quisque rutrum. Curabitur vestibulum aliquam leo.</p>
+<p>Através de uma interface amigável e responsiva, apresentamos todas as soluções da Pensar Clube de forma clara e objetiva, facilitando a jornada do cliente desde o primeiro contato até a contratação dos serviços.</p>
 
 <br/>
 <br/>
 <br/>
-<p><img alt="alt marketing" src="/assets/images/${name}/${name}_post_02.jpg" /></p>
+<p><img alt="Pensar Clube" src="/assets/images/marketing/pensar-clube.png" /></p>
 <br/>
 <br/>
 <br/>
 
-<p>Donec posuere vulputate arcu. Quisque rutrum. Curabitur vestibulum aliquam leo. Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula.</p>
+<h4>Nossa Parceria com a Pensar Clube</h4>
 <br/>
 
-<p>Pellentesque posuere. Phasellus a est. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus viverra nulla ut metus varius laoreet. Praesent egestas tristique nibh.</p>
+<p>A equipe da Bolt 360 trabalhou em estreita colaboração com a Pensar Clube para criar uma presença digital que verdadeiramente reflete a qualidade e profissionalismo dos seus serviços de monitoramento veicular.</p>
 <br/>
 
-<p>Donec posuere vulputate arcu. Quisque rutrum. Curabitur vestibulum aliquam leo. Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula.</p>
+<h4>Soluções Personalizadas para Cada Necessidade</h4>
+<br/>
+
+<p>Entendemos que cada cliente tem necessidades específicas quando se trata de rastreamento veicular. Por isso, desenvolvemos uma plataforma que permite apresentar nossas soluções de forma personalizada, atendendo desde proprietários de um único veículo até grandes frotas empresariais.</p>
+<br/>
+
+<p>Nossa tecnologia de ponta garante um monitoramento preciso e em tempo real, proporcionando tranquilidade e segurança para nossos clientes.</p>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p>Com a parceria entre Pensar Clube e Bolt 360, conseguimos criar uma plataforma digital que não apenas apresenta nossos serviços, mas também educa e orienta nossos clientes sobre a importância do rastreamento veicular no cenário atual.</p>
+<br/>
+
+<p>Nossa missão é garantir que cada cliente encontre facilmente a solução ideal para suas necessidades de segurança veicular, com um processo de contratação simples e transparente.</p>
+<br/>
+
+<p>Entre em contato conosco e descubra como podemos ajudar você ou sua empresa com nossas soluções de rastreamento e monitoramento veicular.</p>
 `;
 
 const base = (index: number) => ({
   id: _mock.id(index),
   title: _mock.postTitle(index),
   description: _mock.description(index),
-  category: 'Marketing',
+  category: 'Rastreamento Veicular',
   favorited: _mock.boolean(index),
   createdAt: _mock.time(index),
   duration: '8 minutos de leitura',
   tags: _tags.slice(index + 1, index + 2),
-  author: {
-    name: _mock.fullName(index),
-    role: _mock.role(index),
-    avatarUrl: _mock.image.avatar(index),
-    quotes: 'Member since Mar 15, 2021',
-    about:
-      'Integer tincidunt. Nullam dictum felis eu pede mollis pretium. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.',
-  },
 });
 
 // ----------------------------------------------------------------------
 
 export const _marketingPosts = [...Array(12)].map((_, index) => ({
   ...base(index),
-  content: content('marketing'),
+  content: content('Rastreamento Veicular'),
   coverUrl: _mock.image.marketing(index),
   heroUrl: `/assets/images/marketing/marketing_post_hero.jpg`,
 }));
@@ -92,7 +83,7 @@ export const _travelPosts = [...Array(12)].map((_, index) => ({
 export const _careerPosts = [...Array(12)].map((_, index) => ({
   ...base(index),
   content: content('career'),
-  coverUrl: _mock.image.career(index),
+  coverUrl: _mock.image.career(index),  
   heroUrl: `/assets/images/career/career_post_hero.jpg`,
 }));
 

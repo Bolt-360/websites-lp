@@ -2,21 +2,20 @@ import { m } from 'framer-motion';
 
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Avatar from '@mui/material/Avatar';
+import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths';
 
 import { fDate } from 'src/utils/format-time';
 
+import { varHover, varTranHover } from 'src/components/animate';
 import Image from 'src/components/image';
 import TextMaxLine from 'src/components/text-max-line';
-import { varHover, varTranHover } from 'src/components/animate';
 
 import { IBlogPostProps } from 'src/types/blog';
 
-import PostTimeBlock from '../common/post-time-block';
 
 // ----------------------------------------------------------------------
 
@@ -57,20 +56,18 @@ export default function MarketingPostItem({ post }: Props) {
         }}
       >
         <Stack spacing={2}>
-          <PostTimeBlock
-            duration={post.duration}
-            createdAt={fDate(post.createdAt)}
-            sx={{ color: 'inherit', opacity: 0.72 }}
-          />
+          <Stack direction="row" justifyContent="space-between" spacing={1.5} sx={{ py: 3 }}>
+            <Stack spacing={0.5} flexGrow={1}>
+              <Typography variant="subtitle2">{post.duration}</Typography>
+              <Typography variant="caption" sx={{ color: 'text.disabled' }}>
+                {fDate(post.createdAt)}
+              </Typography>
+            </Stack>
+          </Stack>
 
           <Link component={RouterLink} href={paths.marketing.post} sx={{ color: 'common.white' }}>
             <TextMaxLine variant="h4">{post.title}</TextMaxLine>
           </Link>
-        </Stack>
-
-        <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
-          <Avatar src={post.author.avatarUrl} sx={{ mr: 1 }} />
-          {post.author.name}
         </Stack>
       </Stack>
     </Stack>

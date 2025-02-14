@@ -1,16 +1,16 @@
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
-import Drawer from '@mui/material/Drawer';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
-import { alpha } from '@mui/material/styles';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import Drawer from '@mui/material/Drawer';
+import Link from '@mui/material/Link';
 import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Stack from '@mui/material/Stack';
+import { alpha } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
-import { useActiveLink } from 'src/routes/hooks';
 import { RouterLink } from 'src/routes/components';
+import { useActiveLink } from 'src/routes/hooks';
+import { paths } from 'src/routes/paths';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 

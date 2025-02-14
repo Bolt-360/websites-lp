@@ -1,44 +1,44 @@
 import { m } from 'framer-motion';
-import { useState, useEffect, useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
-import Tab from '@mui/material/Tab';
-import Fab from '@mui/material/Fab';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import Tabs from '@mui/material/Tabs';
-import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
 import Alert from '@mui/material/Alert';
-import Radio from '@mui/material/Radio';
-import Paper from '@mui/material/Paper';
-import Badge from '@mui/material/Badge';
-import Slider from '@mui/material/Slider';
-import Switch from '@mui/material/Switch';
-import Rating from '@mui/material/Rating';
-import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
-import Checkbox from '@mui/material/Checkbox';
-import TextField from '@mui/material/TextField';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import CardHeader from '@mui/material/CardHeader';
 import AvatarGroup from '@mui/material/AvatarGroup';
-import ToggleButton from '@mui/material/ToggleButton';
-import FormControlLabel from '@mui/material/FormControlLabel';
+import Badge from '@mui/material/Badge';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
+import Checkbox from '@mui/material/Checkbox';
+import Chip from '@mui/material/Chip';
 import CircularProgress from '@mui/material/CircularProgress';
+import Container from '@mui/material/Container';
+import Fab from '@mui/material/Fab';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import IconButton from '@mui/material/IconButton';
+import Paper from '@mui/material/Paper';
+import Radio from '@mui/material/Radio';
+import Rating from '@mui/material/Rating';
+import Slider from '@mui/material/Slider';
+import Stack from '@mui/material/Stack';
+import Switch from '@mui/material/Switch';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import TextField from '@mui/material/TextField';
+import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
+import { paths } from 'src/routes/paths';
 
 import { _mock } from 'src/_mock';
 
-import Image from 'src/components/image';
+import { MotionViewport, varFade } from 'src/components/animate';
 import Iconify from 'src/components/iconify';
-import { varFade, MotionViewport } from 'src/components/animate';
+import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -297,7 +297,7 @@ export default function HomeFlexibleComponents() {
                   }}
                 >
                   <CardHeader
-                    title="Jayvion Simon"
+                    title="Jayvion"
                     subheader="California, United States"
                     avatar={
                       <Badge
