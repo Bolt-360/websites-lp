@@ -31,7 +31,7 @@ export default function ElearningTestimonial({ testimonials }: Props) {
 
   const carouselThumb = useCarousel({
     autoplay: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
     centerMode: true,
     swipeToSlide: true,
     autoplaySpeed: 3000,

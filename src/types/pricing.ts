@@ -18,6 +18,7 @@ export type IPricingMarketingProps = {
   caption: string;
   icon: string;
   options: string[];
+  originalPrice: string;
 };
 
 export type IPricing01Props = {

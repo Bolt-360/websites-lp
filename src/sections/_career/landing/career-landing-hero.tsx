@@ -85,7 +85,7 @@ export default function CareerLandingHero() {
                   '@keyframes pulse': {
                     '0%': {
                       transform: 'scale(1)',
-                      boxShadow: '0 0 0 0 rgba(255, 87, 34, 0.7)',
+                      boxShadow: '0 0 0 0 rgba(6, 205, 205, 0.7)',
                     },
                     '70%': {
                       transform: 'scale(1.05)',
@@ -97,7 +97,7 @@ export default function CareerLandingHero() {
                     },
                   },
                   '&:hover': {
-                    backgroundColor: '#A63606',
+                    backgroundColor: '#024f4f',
                   },
                 }}
               >

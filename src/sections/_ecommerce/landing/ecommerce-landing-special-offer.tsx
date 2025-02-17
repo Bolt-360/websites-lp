@@ -20,7 +20,7 @@ import ProductCountdownBlock from '../common/product-countdown-block';
 // ----------------------------------------------------------------------
 
 const COLOR_OPTIONS = [
-  { label: '#FA541C', value: 'red' },
+  { label: '##04C8C8', value: 'red' },
   { label: '#754FFE', value: 'violet' },
   { label: '#00B8D9', value: 'cyan' },
   { label: '#36B37E', value: 'green' },
