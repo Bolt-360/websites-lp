@@ -88,5 +88,5 @@ export const navConfig = [
     path: paths.pages,
     children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4]],
   },*/
-  { title: 'Blog', path: '/#blog' },
+  { title: 'Portfólio', path: '/#portfolio' },
 ];

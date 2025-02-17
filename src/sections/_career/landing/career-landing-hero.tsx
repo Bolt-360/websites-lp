@@ -20,6 +20,7 @@ import { bgGradient } from 'src/theme/css';
 import SvgColor from 'src/components/svg-color';
 
 import { IJobFiltersProps } from 'src/types/job';
+import { WHATSAPP_CONFIG, sendWhatsAppMessage } from 'src/config/whatsapp';
 
 // ----------------------------------------------------------------------
 
@@ -74,6 +75,7 @@ export default function CareerLandingHero() {
               </Stack>
 
               <Button
+                onClick={() => sendWhatsAppMessage(WHATSAPP_CONFIG.messages.budget)}
                 sx={{
                   backgroundColor: 'primary.main',
                   color: 'common.white',

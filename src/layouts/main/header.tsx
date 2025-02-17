@@ -20,6 +20,7 @@ import { HEADER } from '../config-layout';
 import Searchbar from '../common/searchbar';
 import { navConfig } from './config-navigation';
 import HeaderShadow from '../common/header-shadow';
+import { WHATSAPP_CONFIG, sendWhatsAppMessage } from 'src/config/whatsapp';
 
 // ----------------------------------------------------------------------
 
@@ -58,17 +59,10 @@ export default function Header({ headerOnDark }: Props) {
       </>
 
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
-
         <Button
           variant="contained"
           color="inherit"
-          onClick={(e) => {
-            e.preventDefault();
-            const section = document.querySelector('#fale-conosco');
-            if (section) {
-              section.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
+          onClick={() => sendWhatsAppMessage(WHATSAPP_CONFIG.messages.default)}
           sx={{
             display: { xs: 'none', md: 'inline-flex' },
           }}

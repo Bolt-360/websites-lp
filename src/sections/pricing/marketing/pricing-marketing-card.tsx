@@ -8,6 +8,7 @@ import Image from 'src/components/image';
 import Label from 'src/components/label';
 
 import { IPricingMarketingProps } from 'src/types/pricing';
+import { WHATSAPP_CONFIG, sendWhatsAppMessage } from 'src/config/whatsapp';
 
 // ----------------------------------------------------------------------
 
@@ -21,6 +22,18 @@ export default function PricingMarketingCard({ plan }: Props) {
   const starterLicense = plan.license === 'PRO';
 
   const premiumLicense = plan.license === 'SEO';
+
+  const handleWhatsAppClick = () => {
+    let message = '';
+    if (basicLicense) {
+      message = WHATSAPP_CONFIG.messages.plans.mei(Number(plan.price));
+    } else if (starterLicense) {
+      message = WHATSAPP_CONFIG.messages.plans.pro(Number(plan.price));
+    } else if (premiumLicense) {
+      message = WHATSAPP_CONFIG.messages.plans.seo(Number(plan.price));
+    }
+    sendWhatsAppMessage(message);
+  };
 
   return (
     <Card
@@ -79,6 +92,7 @@ export default function PricingMarketingCard({ plan }: Props) {
         size="large"
         color={(premiumLicense && 'primary') || 'inherit'}
         variant={(basicLicense && 'outlined') || 'contained'}
+        onClick={handleWhatsAppClick}
       >
         Escolher Plano
       </Button>

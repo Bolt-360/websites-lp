@@ -18,7 +18,7 @@ export default function ElearningOurClients({ brands }: Props) {
   const theme = useTheme();
 
   const carousel = useCarousel({
-    slidesToShow: 6,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -53,14 +53,18 @@ export default function ElearningOurClients({ brands }: Props) {
         <Typography variant="h2">Nossos Clientes</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-        Empresas que já transformaram seus negócios com nossos sites.
+          Empresas que já transformaram seus negócios com nossos sites.
         </Typography>
       </Stack>
 
       <Carousel {...carousel.carouselSettings}>
-        {brands.map((brand) => (
-          <SvgColor key={brand.id} src={brand.image} sx={{ width: 106, height: 32 }} />
-        ))}
+        {brands.map((brand) =>
+          brand.name === 'pegado' ? (
+            <SvgColor key={brand.id} src={brand.image} sx={{ width: 176, height: 80 }} />
+          ) : (
+            <SvgColor key={brand.id} src={brand.image} sx={{ width: 106, height: 40 }} />
+          )
+        )}
       </Carousel>
     </Container>
   );
