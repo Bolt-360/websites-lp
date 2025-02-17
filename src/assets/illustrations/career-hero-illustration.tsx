@@ -1,19 +1,19 @@
-import { memo } from 'react';
 import { m } from 'framer-motion';
+import { memo } from 'react';
 
-import { useTheme } from '@mui/material/styles';
 import Box, { BoxProps } from '@mui/material/Box';
+import { useTheme } from '@mui/material/styles';
 
 import { useHoverParallax } from 'src/hooks/use-hover-parallax';
 
 import Image from 'src/components/image';
 import SvgColor from 'src/components/svg-color';
 
+import Character from './pattern/character';
 import Icon from './pattern/icon';
 import Label from './pattern/label';
-import Character from './pattern/character';
-import Pattern02 from './pattern/pattern-02';
 import Pattern01 from './pattern/pattern-01';
+import Pattern02 from './pattern/pattern-02';
 
 // ----------------------------------------------------------------------
 
@@ -65,11 +65,11 @@ function CareerHeroIllustration({ sx, ...other }: BoxProps) {
         >
           <m.div style={{ y: offsetY(-50) }}>
             <Label
-              text="Accounting"
+              text="Soluções Empresariais"
               icon={
                 <Image
-                  alt="accounting"
-                  src="/assets/icons/ic_accounting.svg"
+                  alt="Soluções Empresariais"
+                  src="/assets/icons/service/solucoes.svg"
                   sx={{ width: 48, height: 48 }}
                 />
               }
@@ -88,11 +88,11 @@ function CareerHeroIllustration({ sx, ...other }: BoxProps) {
       >
         <m.div style={{ x: offsetX(80), y: offsetY(80) }}>
           <Label
-            text="Banking"
+            text="SEO"
             icon={
               <Image
-                alt="banking"
-                src="/assets/icons/ic_banking_currency.svg"
+                alt="SEO"
+                src="/assets/icons/service/seo.svg"
                 sx={{ width: 48, height: 48 }}
               />
             }
@@ -109,11 +109,11 @@ function CareerHeroIllustration({ sx, ...other }: BoxProps) {
       >
         <m.div style={{ y: offsetY(80) }}>
           <Label
-            text="Health Care"
+            text="Atendimento Personalizado"
             icon={
               <Image
-                alt="health care"
-                src="/assets/icons/ic_health_care.svg"
+                alt="Atendimento Personalizado"
+                src="/assets/icons/service/atendimento.svg"
                 sx={{ width: 48, height: 48 }}
               />
             }
