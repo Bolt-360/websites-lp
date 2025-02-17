@@ -93,17 +93,32 @@ export const _brandsColor = BRANDS_NAME.map((brand, index) => ({
 // ----------------------------------------------------------------------
 
 export const _faqs = [
-  'Qual o prazo de entrega de um site?',
-  'Como funciona o suporte pós-lançamento?',
-  'Meu site será otimizado para dispositivos móveis e SEO?',
-  'Como a Bolt 360 garante a segurança do meu site?',
-  'Posso integrar o site ao meu próprio CRM',
-].map((question, index) => ({
-  id: _mock.id(index),
-  question,
-  answer:
-    'Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.',
-}));
+  {
+    id: _mock.id(0),
+    question: 'Qual o prazo de entrega de um site?',
+    answer: 'O prazo de entrega varia de acordo com a complexidade do projeto. Para landing pages e sites institucionais simples, entregamos em 15-20 dias. Projetos mais complexos, com e-commerce ou integrações específicas, podem levar de 30 a 45 dias. Todo o processo inclui fase de planejamento, design, desenvolvimento, testes e ajustes finais.'
+  },
+  {
+    id: _mock.id(1),
+    question: 'Como funciona o suporte pós-lançamento?',
+    answer: 'Oferecemos 30 dias de suporte técnico gratuito após o lançamento, incluindo correções de bugs e ajustes necessários. Após esse período, disponibilizamos planos de manutenção mensal que incluem: atualizações de segurança, backup regular, monitoramento de performance, suporte por email/telefone e pequenas alterações de conteúdo. Nosso time está disponível em horário comercial para garantir o funcionamento adequado do seu site.'
+  },
+  {
+    id: _mock.id(2),
+    question: 'Meu site será otimizado para dispositivos móveis e SEO?',
+    answer: 'Absolutamente! Todos os nossos sites são desenvolvidos com design responsivo, garantindo uma experiência perfeita em qualquer dispositivo (celulares, tablets e desktops). Quanto ao SEO, implementamos as melhores práticas, incluindo: otimização de velocidade de carregamento, estrutura de URLs amigável, meta tags otimizadas, sitemap XML, integração com Google Analytics e Search Console, e código limpo seguindo os padrões do Google.'
+  },
+  {
+    id: _mock.id(3),
+    question: 'Como a Bolt 360 garante a segurança do meu site?',
+    answer: 'Nossa abordagem de segurança é multicamada: instalamos certificado SSL (HTTPS) em todos os sites, implementamos proteção contra ataques DDoS e malware, realizamos backups diários com retenção de 30 dias, e mantemos monitoramento 24/7 para detectar e prevenir tentativas de invasão. Além disso, todas as tecnologias e plugins são constantemente atualizados para corrigir vulnerabilidades. Em caso de qualquer incidente, nossa equipe de segurança está pronta para agir rapidamente.'
+  },
+  {
+    id: _mock.id(4),
+    question: 'Posso integrar o site ao meu próprio CRM',
+    answer: 'Sim! Desenvolvemos integrações personalizadas com os principais CRMs do mercado, como Salesforce, HubSpot, RD Station, Pipedrive e outros. A integração pode incluir: sincronização automática de leads, acompanhamento de jornada do cliente, automação de marketing e relatórios personalizados. Também podemos criar APIs específicas para conectar com sistemas proprietários. Todo o processo é documentado e testado para garantir uma integração segura e eficiente.'
+  }
+];
 
 export const _faqsSupport = [
   `[Covid] Seasonal Shopping Guide`,

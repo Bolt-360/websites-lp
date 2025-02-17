@@ -112,13 +112,13 @@ export const _emails = [
 
 export const _fullNames = [
   'Luana Silva',
-  'Lucian Obrien',
-  'Deja Brady',
-  'Harrison Stein',
-  'Reece Chung',
-  'Lainey Davidson',
-  'Cristopher Cardenas',
-  'Melanie Noble',
+  'Michael',
+  'Tia Cida',
+  'Lucas Zerino',
+  'Matheus',
+  'Erico Cesar',
+  'Vitor Maximo',
+  'Rapaz da internet',
 ];
 
 export const _firstNames = [
@@ -243,11 +243,11 @@ export const _phoneNumbers = [
 
 export const _roles = [
   'Gerente Comercial',
-  'Project Manager',
-  'Financial Planner',
-  'Event Coordinator',
-  'Marketing Director',
-  'Software Developer',
+  'Gerente de Marketing',
+  'Gerente de Desenvolvimento',
+  'Gerente de Recursos Humanos',
+  'Gerente de Suporte',
+  'Desenvolvedor de Software',
   'CEO',
   'CTO'
 ];

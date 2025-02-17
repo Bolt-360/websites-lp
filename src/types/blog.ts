@@ -22,3 +22,4 @@ export type IBlogPostProps = {
   author: IAuthorProps;
   shareLinks?: ISocialLinks;
 };
+
