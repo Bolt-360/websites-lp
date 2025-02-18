@@ -85,14 +85,20 @@ export default function MarketingServicesBenefits() {
             display: 'grid',
             alignItems: 'center',
             gap: { xs: 4, md: 8 },
-            gridTemplateColumns: { md: 'repeat(2, 1fr)' },
+            gridTemplateColumns: { md: 'repeat(1, 1fr)' },
           }}
         >
           {mdUp && (
-            <>
+            <Box
+              sx={{
+                pl: { md: 5 },
+                pt: { xs: 5, md: 0 },
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
               <Image alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />
-              <Image alt="benefits 2" src="/assets/illustrations/illustration_benefits.svg" />
-            </>
+            </Box>
           )}
         </Box>
       </Container>
