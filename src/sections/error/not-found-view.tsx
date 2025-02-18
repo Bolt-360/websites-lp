@@ -20,14 +20,14 @@ export default function NotFoundView() {
       <MotionContainer>
         <m.div variants={varBounce().in}>
           <Typography variant="h3" paragraph>
-            Page Not Found!
+            Página não encontrada
           </Typography>
         </m.div>
 
         <m.div variants={varBounce().in}>
           <Typography sx={{ color: 'text.secondary' }}>
-            Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be
-            sure to check your spelling.
+            Desculpe, não conseguimos encontrar a página que você está procurando. Talvez você tenha
+            digitado a URL incorretamente? Certifique-se de verificar a ortografia.
           </Typography>
         </m.div>
 
@@ -44,7 +44,7 @@ export default function NotFoundView() {
         </m.div>
 
         <Button component={RouterLink} href="/" size="large" color="inherit" variant="contained">
-          Go to Home
+          Voltar para a página inicial
         </Button>
       </MotionContainer>
     </CompactLayout>

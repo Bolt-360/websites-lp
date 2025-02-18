@@ -8,6 +8,7 @@ import {
   _marketingPosts,
   _pricingMarketing,
   _brandsColor,
+  _careerPosts,
 } from 'src/_mock';
 
 import MarketingLandingFaqs from '../landing/marketing-landing-faqs';
@@ -21,7 +22,9 @@ import MarketingServicesBenefits from '../services/marketing-services-benefits';
 import MarketingServicesHowItWork from '../services/marketing-services-how-it-work';
 import MarketingServicesInclude from '../services/marketing-services-include';
 import ElearningTestimonial from 'src/sections/_elearning/testimonial/elearning-testimonial';
-
+//import MarketingLandingGift from '../landing/marketing-landing-gift';
+import MarketingPostsView from './marketing-posts-view';
+import CareerLatestPosts from 'src/sections/blog/career/career-latest-posts';
 // ----------------------------------------------------------------------
 
 export default function MarketingLandingView() {
@@ -43,10 +46,15 @@ export default function MarketingLandingView() {
         <PricingMarketing plans={_pricingMarketing} />
       </div>
 
+      {/* <MarketingLandingGift /> */}
+
       <MarketingLandingFaqs />
 
       <div id="portfolio">
         <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
+      </div>
+      <div id="blog">
+        <CareerLatestPosts posts={_careerPosts.slice(0, 4)} />
       </div>
 
       <div id="fale-conosco">

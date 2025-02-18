@@ -44,7 +44,7 @@ export default function CareerPosts({ posts }: Props) {
           variant="outlined"
           endIcon={<Iconify icon="carbon:arrow-down" />}
         >
-          Load more
+          Carregar mais
         </Button>
       </Stack>
     </>

@@ -89,4 +89,5 @@ export const navConfig = [
     children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4]],
   },*/
   { title: 'Portfólio', path: '/#portfolio' },
+  { title: 'Blog', path: '/#blog' },
 ];

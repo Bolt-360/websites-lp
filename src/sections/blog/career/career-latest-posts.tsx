@@ -65,12 +65,12 @@ export default function CareerLatestPosts({ posts }: Props) {
           </Typography>
 
           <Typography variant="h2" sx={{ my: 3 }}>
-            Read Our Lates News
+            Nossos Posts
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Aenean vulputate eleifend tellus. Mauris turpis nunc, blandit et, volutpat molestie,
-            porta ut, ligula.
+            Confira dicas e insights sobre criação de sites para transformar suas ideias em
+            realidade digital.
           </Typography>
         </Stack>
 

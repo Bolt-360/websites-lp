@@ -5,7 +5,6 @@ import Container from '@mui/material/Container';
 
 import { _tags, _mock, _categories, _careerPosts } from 'src/_mock';
 
-import CareerNewsletter from '../career-newsletter';
 import PostSidebar from '../../blog/common/post-sidebar';
 import CareerPosts from '../../blog/career/career-posts';
 import PostSearchMobile from '../../blog/common/post-search-mobile';
@@ -43,8 +42,6 @@ export default function CareerPostsView() {
           </Grid>
         </Grid>
       </Container>
-
-      <CareerNewsletter />
     </>
   );
 }

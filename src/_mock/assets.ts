@@ -380,31 +380,32 @@ export const _companyNames = [
 // ----------------------------------------------------------------------
 
 export const _tags = [
-  'Technology',
+  'Tecnologia',
   'Marketing',
   'Design',
-  'Photography',
-  'Art',
-  'Fashion',
-  'Food',
-  'Travel',
+  'Fotografia',
+  'Arte',
+  'Moda',
+  'Comida',
+  'Viagem',
   'Fitness',
-  'Nature',
-  'Business',
-  'Music',
-  'Health',
-  'Books',
-  'Sports',
-  'Film',
-  'Education',
-  'Motivation',
-  'Gaming',
-  'Pets',
-  'Cooking',
-  'Finance',
-  'Selfcare',
-  'Writing',
+  'Natureza',
+  'Negócios',
+  'Música',
+  'Saúde',
+  'Livros',
+  'Esportes',
+  'Filmes',
+  'Educação',
+  'Motivação',
+  'Jogos',
+  'Animais de Estimação',
+  'Culinária',
+  'Finanças',
+  'Autocuidado',
+  'Escrita',
 ];
+
 
 // ----------------------------------------------------------------------
 
@@ -467,7 +468,7 @@ export const _sentences = [
 // ----------------------------------------------------------------------
 
 export const _descriptions = [
-  `O Pensar Clube é uma empresa de monitoramento veicular que oferece soluções de monitoramento para empresas de todos os tamanhos.`,
+  `A Pensar Clube é uma empresa de monitoramento veicular que oferece soluções de monitoramento para empresas de todos os tamanhos.`,
   `Atque eaque ducimus minima distinctio velit. Laborum et veniam officiis. Delectus ex saepe hic id laboriosam officia. Odit nostrum qui illum saepe debitis ullam. Laudantium beatae modi fugit ut. Dolores consequatur beatae nihil voluptates rem maiores.`,
   `Rerum eius velit dolores. Explicabo ad nemo quibusdam. Voluptatem eum suscipit et ipsum et consequatur aperiam quia. Rerum nulla sequi recusandae illum velit quia quas. Et error laborum maiores cupiditate occaecati.`,
   `Et non omnis qui. Qui sunt deserunt dolorem aut velit cumque adipisci aut enim. Nihil quis quisquam nesciunt dicta nobis ab aperiam dolorem repellat. Voluptates non blanditiis. Error et tenetur iste soluta cupiditate ratione perspiciatis et. Quibusdam aliquid nam sunt et quisquam non esse.`,

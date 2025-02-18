@@ -19,7 +19,7 @@ export type IBlogPostProps = {
   duration: string;
   favorited: boolean;
   description: string;
-  author: IAuthorProps;
+  //author: IAuthorProps;
   shareLinks?: ISocialLinks;
 };
 

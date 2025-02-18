@@ -4,10 +4,10 @@ import { _mock } from './_mock';
 
 export const _categories = [
   { label: 'Marketing', path: '' },
-  { label: 'Community', path: '' },
-  { label: 'Tutorials', path: '' },
-  { label: 'Business', path: '' },
-  { label: 'Management', path: '' },
+  { label: 'Comunidade', path: '' },
+  { label: 'Tutoriais', path: '' },
+  { label: 'Negócios', path: '' },
+  { label: 'Gestão', path: '' },
 ];
 
 // ----------------------------------------------------------------------
@@ -31,25 +31,22 @@ export const _socials = [
     label: 'FaceBook',
     icon: 'carbon:logo-facebook',
     color: '#1877F2',
+    link: 'https://www.facebook.com/bolt360assessoria',
   },
   {
     value: 'instagram',
     label: 'Instagram',
     icon: 'carbon:logo-instagram',
     color: '#E02D69',
+    link: 'https://www.instagram.com/bolt360assessoria',
   },
   {
     value: 'linkedin',
     label: 'Linkedin',
     icon: 'carbon:logo-linkedin',
     color: '#007EBB',
-  },
-  {
-    value: 'twitter',
-    label: 'Twitter',
-    icon: 'carbon:logo-twitter',
-    color: '#00AAEC',
-  },
+    link: 'https://br.linkedin.com/company/bolt-360',
+  }
 ];
 
 // ----------------------------------------------------------------------

@@ -1,4 +1,5 @@
-import { sub } from 'date-fns';
+import { sub, format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 import {
   _ages,
@@ -32,7 +33,13 @@ import {
 
 export const _mock = {
   id: (index: number) => _id[index],
-  time: (index: number) => sub(new Date(), { days: index, hours: index }),
+  time: (index: number) => {
+    const date = new Date();
+    return format(
+      sub(date, { days: index, hours: index }), 
+      'dd MMM yyyy'
+    );
+  },
   boolean: (index: number) => _booleans[index],
   role: (index: number) => _roles[index],
   // Text

@@ -68,7 +68,7 @@ export default function PostSidebar({
   const renderCategories = categories && (
     <Stack spacing={1}>
       <Typography variant="h5" gutterBottom>
-        Categories
+        Categorias
       </Typography>
 
       {categories.map((category) => (
@@ -93,7 +93,7 @@ export default function PostSidebar({
 
   const renderRecentPosts = recentPosts && (
     <Stack spacing={3}>
-      <Typography variant="h5">Recent Posts</Typography>
+      <Typography variant="h5">Posts Recentes</Typography>
 
       {recentPosts.list.map((post) => (
         <PostItemMobile key={post.id} post={post} onSiderbar />
@@ -103,7 +103,7 @@ export default function PostSidebar({
 
   const renderPopularTags = popularTags && (
     <Stack spacing={3}>
-      <Typography variant="h5">Popular Tags</Typography>
+      <Typography variant="h5">Marcadores Populares</Typography>
 
       <Stack direction="row" flexWrap="wrap" spacing={1}>
         {popularTags.map((tag) => (
@@ -121,7 +121,7 @@ export default function PostSidebar({
         <TextField
           fullWidth
           hiddenLabel
-          placeholder="Search..."
+          placeholder="Procurar..."
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -147,7 +147,7 @@ export default function PostSidebar({
 
         {renderPopularTags}
 
-        {advertisement && <Advertisement advertisement={advertisement} />}
+        {/* {advertisement && <Advertisement advertisement={advertisement} />} */}
       </Stack>
     </>
   );
