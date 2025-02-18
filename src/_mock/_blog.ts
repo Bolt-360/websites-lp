@@ -70,7 +70,7 @@ export const _marketingPosts = [...Array(12)].map((_, index) => ({
   ...base(index),
   content: content('Rastreamento Veicular'),
   coverUrl: _mock.image.marketing(index),
-  heroUrl: `/assets/images/marketing/marketing_post_hero.jpg`,
+  heroUrl: `/assets/images/marketing/pensar-clube.png`,
 }));
 
 export const _travelPosts = [...Array(12)].map((_, index) => ({
