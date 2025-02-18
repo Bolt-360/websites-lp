@@ -1,34 +1,34 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
-import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
-import Divider from '@mui/material/Divider';
-import Popover from '@mui/material/Popover';
-import MenuItem from '@mui/material/MenuItem';
 import Checkbox from '@mui/material/Checkbox';
-import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
+import MenuItem from '@mui/material/MenuItem';
+import Popover from '@mui/material/Popover';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import { paths } from 'src/routes/paths';
 
 import { fDate } from 'src/utils/format-time';
 
-import { _socials, _careerPosts } from 'src/_mock';
+import { _careerPosts, _socials } from 'src/_mock';
 
+import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 import Iconify from 'src/components/iconify';
 import Markdown from 'src/components/markdown';
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
-import PostTags from '../../blog/common/post-tags';
-import CareerNewsletter from '../career-newsletter';
-import PostAuthor from '../../blog/common/post-author';
-import PostTimeBlock from '../../blog/common/post-time-block';
-import PostSocialsShare from '../../blog/common/post-socials-share';
 import CareerLatestPosts from '../../blog/career/career-latest-posts';
+import PostAuthor from '../../blog/common/post-author';
+import PostSocialsShare from '../../blog/common/post-socials-share';
+import PostTags from '../../blog/common/post-tags';
+import PostTimeBlock from '../../blog/common/post-time-block';
+import CareerNewsletter from '../career-newsletter';
 
 // ----------------------------------------------------------------------
 
@@ -73,11 +73,17 @@ export default function CareerPostView() {
             </Typography>
 
             <Stack direction="row" justifyContent="space-between" spacing={1.5} sx={{ my: 5 }}>
-              <Avatar src={author.avatarUrl} sx={{ width: 48, height: 48 }} />
-
+              {author?.avatarUrl && (
+                <Avatar 
+                  src={author.avatarUrl}
+                  sx={{ width: 48, height: 48 }}
+                />
+              )}
+              
               <Stack spacing={0.5} flexGrow={1}>
-                <Typography variant="subtitle2">{author.name}</Typography>
-
+                {author?.name && (
+                  <Typography variant="subtitle2">{author.name}</Typography>
+                )}
                 <PostTimeBlock createdAt={fDate(createdAt)} duration={duration} />
               </Stack>
 
