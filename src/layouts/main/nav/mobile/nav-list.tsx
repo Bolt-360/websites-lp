@@ -31,10 +31,8 @@ export default function NavList({ data }: NavListProps) {
       <NavItem
         open={menuOpen.value}
         onClick={menuOpen.onToggle}
-        //
         title={data.title}
         path={data.path}
-        //
         active={active}
         hasChild={!!data.children}
         externalLink={data.path.includes('http')}
