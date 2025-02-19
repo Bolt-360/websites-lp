@@ -13,13 +13,13 @@ export type IBlogPostProps = {
   title: string;
   heroUrl: string;
   tags?: string[];
-  createdAt: Date;
+  createdAt: string;
   category: string;
   coverUrl: string;
   duration: string;
   favorited: boolean;
   description: string;
-  //author: IAuthorProps;
+  author?: IAuthorProps;
   shareLinks?: ISocialLinks;
 };
 

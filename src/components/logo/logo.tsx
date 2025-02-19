@@ -1,11 +1,11 @@
 import { memo } from 'react';
+import Image from 'next/image';
 
 import Link from '@mui/material/Link';
 import { useTheme } from '@mui/material/styles';
 import Box, { BoxProps } from '@mui/material/Box';
 
 import { RouterLink } from 'src/routes/components';
-import Image from 'next/image';
 
 // ----------------------------------------------------------------------
 

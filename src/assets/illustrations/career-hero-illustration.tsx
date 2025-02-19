@@ -1,17 +1,17 @@
-import { m } from 'framer-motion';
 import { memo } from 'react';
+import { m } from 'framer-motion';
 
-import Box, { BoxProps } from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
+import Box, { BoxProps } from '@mui/material/Box';
 
 import { useHoverParallax } from 'src/hooks/use-hover-parallax';
 
 import Image from 'src/components/image';
 import SvgColor from 'src/components/svg-color';
 
-import Character from './pattern/character';
 import Icon from './pattern/icon';
 import Label from './pattern/label';
+import Character from './pattern/character';
 import Pattern01 from './pattern/pattern-01';
 import Pattern02 from './pattern/pattern-02';
 

@@ -13,8 +13,12 @@ import { NavItemProps, NavItemStateProps } from '../types';
 
 // ----------------------------------------------------------------------
 
-const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
-  ({ title, path, open, active, hasChild, externalLink, ...other }, ref) => {
+interface Props extends NavItemProps {
+  onClick?: () => void;
+}
+
+const NavItem = forwardRef<HTMLDivElement, Props>(
+  ({ title, path, open, active, hasChild, externalLink, onClick, ...other }, ref) => {
     const renderContent = (
       <StyledNavItem ref={ref} active={active} {...other}>
         <Box component="span" sx={{ flexGrow: 1 }}>

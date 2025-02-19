@@ -1,13 +1,13 @@
-import Timeline from '@mui/lab/Timeline';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import Box from '@mui/material/Box';
+import Timeline from '@mui/lab/Timeline';
+import TimelineDot from '@mui/lab/TimelineDot';
 import Container from '@mui/material/Container';
-import { alpha, useTheme } from '@mui/material/styles';
+import TimelineItem from '@mui/lab/TimelineItem';
 import Typography from '@mui/material/Typography';
+import TimelineContent from '@mui/lab/TimelineContent';
+import { alpha, useTheme } from '@mui/material/styles';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 

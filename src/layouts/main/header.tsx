@@ -1,3 +1,5 @@
+import { usePathname } from 'next/navigation';
+
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
@@ -6,23 +8,21 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
-import { usePathname } from 'next/navigation';
 
 import { useOffSetTop } from 'src/hooks/use-off-set-top';
 import { useResponsive } from 'src/hooks/use-responsive';
 
 import { bgBlur } from 'src/theme/css';
+import { WHATSAPP_CONFIG, sendWhatsAppMessage } from 'src/config/whatsapp';
 
 import Logo from 'src/components/logo';
+import Iconify from 'src/components/iconify';
 
 import NavMobile from './nav/mobile';
 import NavDesktop from './nav/desktop';
 import { HEADER } from '../config-layout';
-import Searchbar from '../common/searchbar';
 import { navConfig } from './config-navigation';
 import HeaderShadow from '../common/header-shadow';
-import { WHATSAPP_CONFIG, sendWhatsAppMessage } from 'src/config/whatsapp';
-import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
@@ -39,7 +39,7 @@ export default function Header({ headerOnDark }: Props) {
   const pathname = usePathname();
 
   // Add check for blog paths
-  const hiddenPaths = ['/blog/posts', '/blog/post'];
+  const hiddenPaths = ['/blog/posts', '/blog/post', '/posts', '/post'];
   if (hiddenPaths.some((path) => pathname?.startsWith(path))) {
     return (
       <AppBar
@@ -74,7 +74,7 @@ export default function Header({ headerOnDark }: Props) {
             <Button
               startIcon={<Iconify icon="carbon:chevron-left" />}
               onClick={() => window.history.back()}
-              sx={{ color: 'text.primary', ml: -20 }}
+              sx={{ color: 'text.primary', ml: 1 }}
             >
               Voltar
             </Button>
@@ -90,7 +90,7 @@ export default function Header({ headerOnDark }: Props) {
       <Box sx={{ lineHeight: 0, position: 'relative' }}>
         <Logo headerOnDark={headerOnDark && !offset} />
 
-        <Link href="/home" target="_blank" rel="noopener"></Link>
+        <Link href="/home" target="_blank" rel="noopener" />
       </Box>
 
       <>

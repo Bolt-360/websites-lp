@@ -7,22 +7,10 @@ export const paths = {
     services: '/marketing/services',
     caseStudies: '/marketing/case-studies',
     caseStudy: `/marketing/case-study`,
-    posts: '/marketing/posts',
-    post: `/marketing/post`,
+    posts: '/posts',
+    post: `/post`,
     about: '/marketing/about',
     contact: '/marketing/contact',
-  },
-  // Travel
-  travel: {
-    root: '/travel',
-    tours: '/travel/tours',
-    tour: `/travel/tour`,
-    checkout: '/travel/checkout',
-    orderCompleted: '/travel/order-completed',
-    posts: '/travel/posts',
-    post: `/travel/post`,
-    about: '/travel/about',
-    contact: '/travel/contact',
   },
   // Career
   career: {
@@ -34,17 +22,7 @@ export const paths = {
     about: '/career/about',
     contact: '/career/contact',
   },
-  // E-learning
-  eLearning: {
-    root: '/e-learning',
-    courses: '/e-learning/courses',
-    course: `/e-learning/course`,
-    posts: '/e-learning/posts',
-    post: `/e-learning/post`,
-    about: '/e-learning/about',
-    contact: '/e-learning/contact',
-  },
-  // E-commerce
+    /* E-commerce
   eCommerce: {
     root: '/e-commerce',
     products: '/e-commerce/products',
@@ -62,7 +40,7 @@ export const paths = {
       orders: `/e-commerce/account/orders`,
       payment: `/e-commerce/account/payment`,
     },
-  },
+  }, */
   // Auth
   loginCover: '/auth/login-cover',
   loginBackground: '/auth/login-background',

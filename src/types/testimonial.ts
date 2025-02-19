@@ -1,11 +1,11 @@
 // ----------------------------------------------------------------------
 
-export type ITestimonialProps = {
+export interface ITestimonialProps {
   id: string;
   name: string;
   role: string;
-  review: string;
   avatarUrl: string;
-  createdAt: Date;
+  createdAt: string;
   ratingNumber: number;
-};
+  review: string;
+}

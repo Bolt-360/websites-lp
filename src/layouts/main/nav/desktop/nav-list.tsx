@@ -16,7 +16,6 @@ import { useActiveLink } from 'src/routes/hooks/use-active-link';
 import { useBoolean } from 'src/hooks/use-boolean';
 
 import Label from 'src/components/label';
-import Image from 'src/components/image';
 
 import NavItem from './nav-item';
 import { NavListProps, NavSubListProps } from '../types';
@@ -135,7 +134,7 @@ function NavSubList({ subheader, isNew, cover, items }: NavSubListProps) {
         )}
       </ListSubheader>
 
-      <Link component={RouterLink} href={coverPath}></Link>
+      <Link component={RouterLink} href={coverPath} />
 
       <Stack spacing={1.5} alignItems="flex-start">
         {items.map((item) => {

@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
+import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
+import Typography from '@mui/material/Typography';
 
-import Carousel, { CarouselArrows, useCarousel } from 'src/components/carousel';
+import Carousel, { useCarousel, CarouselArrows } from 'src/components/carousel';
 
 import { ITestimonialProps } from 'src/types/testimonial';
 

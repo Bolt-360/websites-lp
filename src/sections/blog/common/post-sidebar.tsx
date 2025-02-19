@@ -18,7 +18,7 @@ import { IAuthorProps } from 'src/types/author';
 import { IBlogPostProps, IBlogCategoryProps } from 'src/types/blog';
 
 import PostItemMobile from './post-item-mobile';
-import Advertisement, { AdvertisementProps } from '../../advertisement';
+import { AdvertisementProps } from '../../advertisement';
 
 // ----------------------------------------------------------------------
 

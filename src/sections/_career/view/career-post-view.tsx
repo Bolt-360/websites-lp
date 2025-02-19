@@ -33,8 +33,7 @@ import CareerNewsletter from '../career-newsletter';
 // ----------------------------------------------------------------------
 
 export default function CareerPostView() {
-  const { title, description, duration, createdAt, favorited, author, tags, content } =
-    _careerPosts[0];
+  const { title, description, duration, createdAt, favorited, tags, content } = _careerPosts[0];
 
   const [favorite, setFavorite] = useState(favorited);
 
@@ -73,18 +72,8 @@ export default function CareerPostView() {
             </Typography>
 
             <Stack direction="row" justifyContent="space-between" spacing={1.5} sx={{ my: 5 }}>
-              {author?.avatarUrl && (
-                <Avatar 
-                  src={author.avatarUrl}
-                  sx={{ width: 48, height: 48 }}
-                />
-              )}
-              
               <Stack spacing={0.5} flexGrow={1}>
-                {author?.name && (
-                  <Typography variant="subtitle2">{author.name}</Typography>
-                )}
-                <PostTimeBlock createdAt={fDate(createdAt)} duration={duration} />
+                <PostTimeBlock createdAt={new Date(createdAt).toISOString()} duration={duration} />
               </Stack>
 
               <Stack direction="row" alignItems="center">
@@ -113,8 +102,6 @@ export default function CareerPostView() {
             <PostSocialsShare />
 
             <Divider sx={{ mt: 8 }} />
-
-            <PostAuthor author={author} />
           </Grid>
         </Grid>
       </Container>

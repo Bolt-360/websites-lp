@@ -11,6 +11,16 @@ import { NavListProps } from '../types';
 
 // ----------------------------------------------------------------------
 
+interface NavItemProps {
+  title: string;
+  path: string;
+  active: boolean;
+  hasChild: boolean;
+  externalLink: boolean;
+  open?: boolean;
+  onClick?: () => void;
+}
+
 export default function NavList({ data }: NavListProps) {
   const active = useActiveLink(data.path, !!data.children);
 

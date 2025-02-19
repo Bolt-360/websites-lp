@@ -1,32 +1,32 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useState, useCallback } from 'react';
 
-import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
-import MenuItem from '@mui/material/MenuItem';
-import Popover from '@mui/material/Popover';
 import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import Popover from '@mui/material/Popover';
+import MenuItem from '@mui/material/MenuItem';
+import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
+import Typography from '@mui/material/Typography';
 
 import { paths } from 'src/routes/paths';
 
 import { fDate } from 'src/utils/format-time';
 
-import { _marketingPosts, _socials } from 'src/_mock';
+import { _socials, _marketingPosts } from 'src/_mock';
 
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
-import Iconify from 'src/components/iconify';
 import Image from 'src/components/image';
+import Iconify from 'src/components/iconify';
 import Markdown from 'src/components/markdown';
+import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
-import PostAuthor from '../../blog/common/post-author';
-import PostSocialsShare from '../../blog/common/post-socials-share';
 import PostTags from '../../blog/common/post-tags';
-import BlogMarketingLatestPosts from '../../blog/marketing/marketing-latest-posts';
-import MarketingLandingFreeSEO from '../landing/marketing-landing-free-seo';
+import PostAuthor from '../../blog/common/post-author';
 import MarketingNewsletter from '../marketing-newsletter';
+import PostSocialsShare from '../../blog/common/post-socials-share';
+import MarketingLandingFreeSEO from '../landing/marketing-landing-free-seo';
+import BlogMarketingLatestPosts from '../../blog/marketing/marketing-latest-posts';
 
 // ----------------------------------------------------------------------
 
@@ -123,7 +123,7 @@ export default function MarketingPostView() {
 
             <Divider sx={{ mt: 8 }} />
 
-            <PostAuthor author={post.author} />
+            <PostAuthor />
           </Grid>
         </Grid>
       </Container>

@@ -1,26 +1,19 @@
-import { useCallback, useState } from 'react';
 
 import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
-import Stack from '@mui/material/Stack';
-import { alpha, useTheme } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
+import Typography from '@mui/material/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import { fShortenNumber } from 'src/utils/format-number';
-
-import { _brands } from 'src/_mock';
-import CareerHeroIllustration from 'src/assets/illustrations/career-hero-illustration';
 import { bgGradient } from 'src/theme/css';
-
-import SvgColor from 'src/components/svg-color';
+import { WHATSAPP_CONFIG, sendWhatsAppMessage } from 'src/config/whatsapp';
+import CareerHeroIllustration from 'src/assets/illustrations/career-hero-illustration';
 
 import { IJobFiltersProps } from 'src/types/job';
-import { WHATSAPP_CONFIG, sendWhatsAppMessage } from 'src/config/whatsapp';
 
 // ----------------------------------------------------------------------
 

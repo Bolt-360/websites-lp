@@ -4,8 +4,8 @@ import Typography from '@mui/material/Typography';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import Iconify from 'src/components/iconify';
 import Image from 'src/components/image';
+import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

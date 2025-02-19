@@ -52,8 +52,8 @@ export default function MarketingFeaturedPostItem({ post }: Props) {
         </Stack>
 
         <Stack direction="row" alignItems="center" sx={{ pt: 2, typography: 'body2' }}>
-          <Avatar src={post.author.avatarUrl} sx={{ mr: 1 }} />
-          {post.author.name}
+          <Avatar src={post.author?.avatarUrl} sx={{ mr: 1 }} />
+          {post.author?.name}
         </Stack>
       </Stack>
     </Stack>

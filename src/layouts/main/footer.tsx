@@ -1,30 +1,29 @@
-import Masonry from '@mui/lab/Masonry';
-import Button, { buttonClasses } from '@mui/material/Button';
+import Link from '@mui/material/Link';
+import Divider from '@mui/material/Divider';
 import Collapse from '@mui/material/Collapse';
 import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import InputAdornment from '@mui/material/InputAdornment';
-import Link from '@mui/material/Link';
-import Stack, { StackProps } from '@mui/material/Stack';
-import { alpha, styled } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import { alpha, styled } from '@mui/material/styles';
+import Stack, { StackProps } from '@mui/material/Stack';
+import InputAdornment from '@mui/material/InputAdornment';
+import Button, { buttonClasses } from '@mui/material/Button';
 
-import { RouterLink } from 'src/routes/components';
 import { usePathname } from 'src/routes/hooks';
+import { RouterLink } from 'src/routes/components';
 
 import { useBoolean } from 'src/hooks/use-boolean';
 import { useResponsive } from 'src/hooks/use-responsive';
 
 import { _socials } from 'src/_mock';
 
-import Iconify from 'src/components/iconify';
 import Logo from 'src/components/logo';
+import Iconify from 'src/components/iconify';
 
-import { navConfig, pageLinks } from './config-navigation';
 import { NavSubListProps } from './nav/types';
+import { pageLinks } from './config-navigation';
 
 // ----------------------------------------------------------------------
 
@@ -46,7 +45,7 @@ export default function Footer() {
 
   const pathname = usePathname();
 
-  //const mobileList = navConfig.find((i) => i.title === 'Pages')?.children || [];
+  // const mobileList = navConfig.find((i) => i.title === 'Pages')?.children || [];
 
   const desktopList = pageLinks.sort((listA, listB) => Number(listA.order) - Number(listB.order));
 

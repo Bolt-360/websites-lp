@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import ConfettiExplosion from 'react-confetti-explosion';
+
 import Box from '@mui/material/Box';
+import { keyframes } from '@mui/system';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { keyframes } from '@mui/system';
-import ConfettiExplosion from 'react-confetti-explosion';
 
 // Definindo animações
 const bounce = keyframes`

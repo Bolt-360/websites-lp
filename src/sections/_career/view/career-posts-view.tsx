@@ -18,6 +18,7 @@ export default function CareerPostsView() {
 
       <Container
         sx={{
+          mt: 2,
           pt: { xs: 0, md: 5 },
           pb: { xs: 8, md: 15 },
         }}
@@ -31,7 +32,9 @@ export default function CareerPostsView() {
             <PostSidebar
               popularTags={_tags}
               categories={_categories}
-              recentPosts={{ list: _careerPosts.slice(-4) }}
+              recentPosts={{
+                list: _careerPosts.slice(-4),
+              }}
               advertisement={{
                 title: 'Advertisement',
                 description: 'Duis leo. Donec orci lectus, aliquam ut, faucibus non',
