@@ -2,7 +2,6 @@
 
 import { useCallback, useState } from 'react';
 
-import Avatar from '@mui/material/Avatar';
 import Checkbox from '@mui/material/Checkbox';
 import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
@@ -15,7 +14,6 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 import { paths } from 'src/routes/paths';
 
-import { fDate } from 'src/utils/format-time';
 
 import { _careerPosts, _socials } from 'src/_mock';
 
@@ -24,11 +22,9 @@ import Iconify from 'src/components/iconify';
 import Markdown from 'src/components/markdown';
 
 import CareerLatestPosts from '../../blog/career/career-latest-posts';
-import PostAuthor from '../../blog/common/post-author';
 import PostSocialsShare from '../../blog/common/post-socials-share';
 import PostTags from '../../blog/common/post-tags';
 import PostTimeBlock from '../../blog/common/post-time-block';
-import CareerNewsletter from '../career-newsletter';
 
 // ----------------------------------------------------------------------
 
@@ -107,10 +103,6 @@ export default function CareerPostView() {
       </Container>
 
       <Divider />
-
-      <CareerLatestPosts posts={_careerPosts.slice(0, 5)} />
-
-      <CareerNewsletter />
 
       <Popover
         open={!!open}

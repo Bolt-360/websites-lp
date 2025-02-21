@@ -38,11 +38,6 @@ const content = (name: string) => `
 <p>Nossa tecnologia de ponta garante um monitoramento preciso e em tempo real, proporcionando tranquilidade e segurança para nossos clientes.</p>
 
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 <p>Com a parceria entre Pensar Clube e Bolt 360, conseguimos criar uma plataforma digital que não apenas apresenta nossos serviços, mas também educa e orienta nossos clientes sobre a importância do rastreamento veicular no cenário atual.</p>
 <br/>

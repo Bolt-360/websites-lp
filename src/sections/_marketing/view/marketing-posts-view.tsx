@@ -11,6 +11,7 @@ import PostSearchMobile from '../../blog/common/post-search-mobile';
 import BlogMarketingPosts from '../../blog/marketing/marketing-posts';
 import MarketingLandingFreeSEO from '../landing/marketing-landing-free-seo';
 import BlogMarketingFeaturedPosts from '../../blog/marketing/marketing-featured-posts';
+import { _blogPosts } from 'src/_mock/_posts';
 
 // ----------------------------------------------------------------------
 
@@ -19,7 +20,7 @@ export default function MarketingPostsView() {
     <>
       <PostSearchMobile />
 
-      <BlogMarketingFeaturedPosts posts={_marketingPosts.slice(0, 5)} />
+      <BlogMarketingFeaturedPosts posts={_blogPosts.slice(0, 5)} />
 
       <Container
         sx={{
