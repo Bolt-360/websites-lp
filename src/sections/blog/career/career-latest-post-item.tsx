@@ -74,7 +74,7 @@ export default function CareerLatestPostItem({ post, order, largePost }: Props) 
           }}
         />
 
-        <Link component={RouterLink} href={paths.career.post} color="inherit">
+        <Link component={RouterLink} href={`${paths.career.post}/${post.id}`} color="inherit">
           <TextMaxLine variant={largePost ? 'h3' : 'h6'}>{post.title}</TextMaxLine>
         </Link>
 

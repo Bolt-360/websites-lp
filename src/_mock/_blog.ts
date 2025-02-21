@@ -1,6 +1,6 @@
 import { _mock } from './_mock';
 import { _tags } from './assets';
-import { _htmlContent } from './_blogcontent';
+import { _htmlContent, _mock as _mockBlog } from './_blogcontent';
 
 // ----------------------------------------------------------------------
 
@@ -66,12 +66,12 @@ const base = (index: number) => ({
 });
 
 const blogBase = (index: number) => ({
-  id: _mock.id(index),
-  title: _mock.blogPostTitle(index),
-  description: _mock.descriptionBlog(index),
+  id: _mockBlog.id(index),
+  title: _mockBlog.blogPostTitle(index),
+  description: _mockBlog.descriptionBlog(index),
   category: 'Sites',
-  favorited: _mock.boolean(index),
-  createdAt: _mock.time(index),
+  favorited: _mockBlog.boolean(index),
+  createdAt: _mockBlog.time(index),
   duration: '8 minutos de leitura',
   tags: _tags.slice(index + 1, index + 2),
 });
@@ -85,17 +85,10 @@ export const _marketingPosts = [...Array(12)].map((_, index) => ({
   heroUrl: `/assets/images/marketing/pensar-clube.png`,
 }));
 
-export const _travelPosts = [...Array(12)].map((_, index) => ({
-  ...base(index),
-  content: content('travel'),
-  coverUrl: _mock.image.travel(index),
-  heroUrl: `/assets/images/travel/travel_post_hero.jpg`,
-}));
-
 export const _careerPosts = [...Array(12)].map((_, index) => ({
   ...blogBase(index),
-  content: _htmlContent[index],
-  coverUrl: _mock.image.career(index),  
+  content: _htmlContent[index % _htmlContent.length],
+  coverUrl: _mockBlog.image.career(index),
   heroUrl: `/assets/images/career/career_post_hero.jpg`,
 }));
 

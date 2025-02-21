@@ -25,10 +25,7 @@ type Props = {
 
 export default function CareerLatestPosts({ posts }: Props) {
   const mdUp = useResponsive('up', 'md');
-
-  console.log(posts);
   const latestPost = posts[0];
-  console.log(latestPost);
 
   const viewAllBtn = (
     <Button

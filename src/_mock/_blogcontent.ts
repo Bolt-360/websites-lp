@@ -1,6 +1,88 @@
+import { sub, format } from 'date-fns';
+
+import {
+    _ages,
+    _roles,
+    _emails,
+    _prices,
+    _nativeL,
+    _nativeM,
+    _nativeS,
+    _ratings,
+    _booleans,
+    _percents,
+    _fullNames,
+    _lastNames,
+    _firstNames,
+    _fullAddress,
+    _companyNames,
+    _descriptions,
+    _phoneNumbers,
+    _descriptionsBlog,
+    _blogPostTitles
+} from './assets';
+
+// ----------------------------------------------------------------------
+
+
+export const _idBlog = [...Array(40)].map(
+    (_, index) => `ef9f09a7-dd88-49d5-b1c8-1daf80c2d7c${index + 1}`
+);
+
+export const _mock = {
+    id: (index: number) => _idBlog[index],
+    time: (index: number) => {
+        const date = new Date();
+        return format(
+            sub(date, { days: index, hours: index }),
+            'dd MMM yyyy'
+        );
+    },
+    boolean: (index: number) => _booleans[index],
+    role: (index: number) => _roles[index],
+    // Text
+    blogPostTitle: (index: number) => _blogPostTitles[index],
+    description: (index: number) => _descriptions[index],
+    descriptionBlog: (index: number) => _descriptionsBlog[index],
+    // Contact
+    email: (index: number) => _emails[index],
+    phoneNumber: (index: number) => _phoneNumbers[index],
+    fullAddress: (index: number) => _fullAddress[index],
+    // Name
+    firstName: (index: number) => _firstNames[index],
+    lastName: (index: number) => _lastNames[index],
+    fullName: (index: number) => _fullNames[index],
+    companyName: (index: number) => _companyNames[index],
+    // Number
+    number: {
+        percent: (index: number) => _percents[index],
+        rating: (index: number) => _ratings[index],
+        age: (index: number) => _ages[index],
+        price: (index: number) => _prices[index],
+        nativeS: (index: number) => _nativeS[index],
+        nativeM: (index: number) => _nativeM[index],
+        nativeL: (index: number) => _nativeL[index],
+    },
+    // Image
+    image: {
+        cover: (index: number) => `/assets/images/cover/cover_${index + 1}.jpg`,
+        avatar: (index: number) => `/assets/images/avatar/avatar_${index + 1}.jpg`,
+        company: (index: number) => `/assets/images/company/company_${index + 1}.png`,
+        product: (index: number) => `/assets/images/z_product/product_${index + 1}.png`,
+        portrait: (index: number) => `/assets/images/portrait/portrait_${index + 1}.jpg`,
+        career: (index: number) => `/assets/images/career/career_${index + 1}.jpg`,
+    },
+    video: (index: number) =>
+        [
+            `https://www.dropbox.com/s/odzycivuo9cy5rg/video_01.mp4?dl=0`,
+            `https://www.dropbox.com/s/7cx04n8rr4w5rbg/video_02.mp4?dl=0`,
+        ][index],
+};
+
+
 export const _htmlContent = [
     [
-     `<h4>A Importância de um Site para Seu Negócio</h4> 
+        `<h4>A Importância de um Site para Seu Negócio</h4> 
      <br/> 
      <p>Ter um site para o seu negócio é essencial nos dias de hoje. Ele não só funciona como uma vitrine virtual, mas também como uma ferramenta poderosa para atrair novos clientes e aumentar a visibilidade da sua marca. Com a digitalização crescente, um site bem estruturado pode ser a chave para o sucesso do seu negócio.</p>
      <br/> 
@@ -34,7 +116,7 @@ export const _htmlContent = [
      <br/>`
     ],
     [
-         `<h4>Como um Site Profissional Pode Impulsionar Suas Vendas</h4 >
+        `<h4>Como um Site Profissional Pode Impulsionar Suas Vendas</h4 >
          <br/>
          <p>Um site profissional é mais do que uma simples página na internet. Ele é uma ferramenta estratégica que pode aumentar significativamente suas vendas. Com um design atrativo, funcionalidades intuitivas e uma estrutura bem planejada, seu site se torna um dos maiores aliados do seu negócio para conquistar novos clientes e aumentar a conversão.</p >
          <br/>
@@ -65,7 +147,7 @@ export const _htmlContent = [
          <p>Em resumo, investir em um site profissional é uma das maneiras mais eficazes de impulsionar suas vendas. Com uma estratégia digital bem elaborada, você amplia a visibilidade de sua marca e transforma seu site em um canal eficiente de vendas e captação de novos clientes.</p >
          <br/>
          <p>Entre em contato conosco e descubra como podemos ajudá-lo a criar um site profissional que impulsione suas vendas e atraia mais clientes para o seu negócio.</p >
-        <br/>` 
+        <br/>`
     ],
     [
         `<h4>Benefícios de Ter um Site Responsivo e Moderno</h4>
@@ -137,4 +219,3 @@ export const _htmlContent = [
 
     ]
 ];
-  
