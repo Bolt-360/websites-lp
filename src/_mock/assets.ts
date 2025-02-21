@@ -261,6 +261,21 @@ export const _postTitles = [
   'Pegado Seguros',
 ];
 
+export const _blogPostTitles = [
+  "A Importância de um Site para Seu Negócio",
+  "Como um Site Profissional Pode Impulsionar Suas Vendas",
+  "Benefícios de Ter um Site Responsivo e Moderno",
+  "Tecnologia e Desempenho: O que um Bom Site Precisa?",
+  "Dicas para Criar um Site que Converte Visitantes em Clientes",
+  "O Futuro do Comércio Digital e a Necessidade de um Site",
+  "Casos de Sucesso: Empresas que Cresceram com um Site Profissional",
+  "A Velocidade do Site Importa? Como Melhorar seu Desempenho Online",
+  "SEO e Visibilidade: Como um Site Bem Otimizado Pode Ajudar?",
+  "Sites para Pequenos Negócios: Vale a Pena Investir?",
+  "A Importância de uma Experiência de Usuário Fluida no Seu Site",
+  "Como Escolher a Melhor Plataforma para Criar Seu Site"
+];
+
 // ----------------------------------------------------------------------
 
 export const _productNames = [
@@ -492,4 +507,19 @@ export const _descriptions = [
   `Sunt totam facilis. Quam commodi voluptatem veniam. Tempora deleniti itaque fugit nihil voluptas.`,
   `Ipsam aliquam velit nobis repellendus officiis aut deserunt id et. Nihil sunt aut dolores aut. Dolores est ipsa quia et laborum quidem laborum accusamus id. Facilis odit quod hic laudantium saepe omnis nisi in sint. Sed cupiditate possimus id.`,
   `Magnam non eveniet optio optio ut aliquid atque. Velit libero aspernatur quis laborum consequatur laudantium. Tempora facere optio fugit accusantium ut. Omnis aspernatur reprehenderit autem esse ut ut enim voluptatibus.`,
+];
+
+export const _descriptionsBlog = [
+  "Descubra por que um site é essencial para o sucesso do seu negócio e como ele pode ampliar sua presença online.",
+    "Saiba como um site bem estruturado pode aumentar suas vendas e atrair mais clientes.",
+    "Veja os benefícios de um site responsivo e como ele melhora a experiência do usuário.",
+    "Entenda os principais fatores técnicos que garantem um site rápido e eficiente.",
+    "Aprenda dicas essenciais para criar um site que converte visitantes em clientes.",
+    "Descubra como o comércio digital está evoluindo e por que um site é indispensável.",
+    "Conheça empresas que tiveram sucesso ao investir em um site profissional.",
+    "Saiba por que a velocidade do site é crucial e como otimizar seu desempenho.",
+    "Entenda a importância do SEO e como um site otimizado pode atrair mais visitantes.",
+    "Veja se vale a pena investir em um site para pequenos negócios e os benefícios que ele pode trazer.",
+    "Descubra como uma experiência de usuário fluida pode melhorar a retenção de clientes.",
+    "Saiba como escolher a melhor plataforma para criar um site adequado ao seu negócio."
 ];

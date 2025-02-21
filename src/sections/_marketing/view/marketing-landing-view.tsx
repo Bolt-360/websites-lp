@@ -1,11 +1,6 @@
 'use client';
 
-import {
-  _careerPosts,
-  _testimonials,
-  _marketingPosts,
-  _pricingMarketing,
-} from 'src/_mock';
+import { _careerPosts, _testimonials, _marketingPosts, _pricingMarketing } from 'src/_mock';
 
 // import MarketingLandingGift from '../landing/marketing-landing-gift'
 import CareerLatestPosts from 'src/sections/blog/career/career-latest-posts';
@@ -19,7 +14,6 @@ import MarketingServicesInclude from '../services/marketing-services-include';
 import MarketingServicesBenefits from '../services/marketing-services-benefits';
 import BlogMarketingLatestPosts from '../../blog/marketing/marketing-latest-posts';
 import MarketingServicesHowItWork from '../services/marketing-services-how-it-work';
-import { _blogPosts } from 'src/_mock/_posts';
 // ----------------------------------------------------------------------
 
 export default function MarketingLandingView() {
@@ -49,7 +43,7 @@ export default function MarketingLandingView() {
         <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
       </div>
       <div id="blog">
-        <CareerLatestPosts posts={_blogPosts.slice(0, 4)} />
+        <CareerLatestPosts posts={_careerPosts.slice(0, 4)} />
       </div>
 
       <div id="fale-conosco">
