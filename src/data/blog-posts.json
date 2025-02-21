@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": "pensar-clube",
+      "title": "Pensar Clube",
+      "description": "A Pensar Clube é uma empresa de monitoramento veicular que oferece soluções de monitoramento para empresas de todos os tamanhos.",
+      "content": "A Pensar Clube é uma empresa especializada em monitoramento veicular...",
+      "coverUrl": "/assets/images/marketing/post_1.jpg",
+      "duration": "8 minutos de leitura",
+      "createdAt": "21 Feb 2025"
+    },
+    {
+      "id": "smart-rastreamento",
+      "title": "Smart Rastreamento",
+      "description": "Smart Rastreamento oferece soluções inteligentes para rastreamento veicular.",
+      "content": "Smart Rastreamento é líder em soluções de rastreamento...",
+      "coverUrl": "/assets/images/marketing/post_2.jpg",
+      "duration": "8 minutos de leitura",
+      "createdAt": "20 Feb 2025"
+    },
+    {
+      "id": "mehelp",
+      "title": "MeHelp",
+      "description": "Plataforma de suporte e atendimento ao cliente.",
+      "content": "MeHelp é uma plataforma inovadora de atendimento...",
+      "coverUrl": "/assets/images/marketing/post_3.jpg",
+      "duration": "8 minutos de leitura",
+      "createdAt": "19 Feb 2025"
+    },
+    {
+      "id": "pegado-seguros",
+      "title": "Pegado Seguros",
+      "description": "Soluções em seguros para todos os tipos de necessidades.",
+      "content": "Pegado Seguros oferece uma gama completa de soluções...",
+      "coverUrl": "/assets/images/marketing/post_4.jpg",
+      "duration": "8 minutos de leitura",
+      "createdAt": "18 Feb 2025"
+    }
+  ]
+} 

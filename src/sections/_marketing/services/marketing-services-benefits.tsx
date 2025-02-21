@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import { useResponsive } from 'src/hooks/use-responsive';
@@ -62,7 +62,7 @@ export default function MarketingServicesBenefits() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          Por Que um Site Profissional é Essencial?
+        Descubra as vantagens de ter um site profissional para a sua empresa. Aumente sua presença digital, conquiste novos clientes e impulsione seus resultados!
         </Typography>
 
         <Typography
@@ -97,7 +97,14 @@ export default function MarketingServicesBenefits() {
                 justifyContent: 'center',
               }}
             >
-              <Image alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />
+              <Image 
+                alt="benefits" 
+                src="/assets/images/marketing/pensarclube.png"
+                sx={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                }}
+              />
             </Box>
           )}
         </Box>
