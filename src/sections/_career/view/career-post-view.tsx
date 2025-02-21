@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useState } from 'react';
+import { useParams } from 'next/navigation';
 
 import Checkbox from '@mui/material/Checkbox';
 import Container from '@mui/material/Container';
@@ -13,7 +14,6 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
 
 import { paths } from 'src/routes/paths';
-
 
 import { _careerPosts, _socials } from 'src/_mock';
 
@@ -29,7 +29,12 @@ import PostTimeBlock from '../../blog/common/post-time-block';
 // ----------------------------------------------------------------------
 
 export default function CareerPostView() {
-  const { title, description, duration, createdAt, favorited, tags, content } = _careerPosts[0];
+  const params = useParams();
+  const postId = params.id;
+
+  const currentPost = _careerPosts.find((post) => post.id === postId) || _careerPosts[0];
+
+  const { title, description, duration, createdAt, favorited, tags, content } = currentPost;
 
   const [favorite, setFavorite] = useState(favorited);
 
@@ -91,7 +96,7 @@ export default function CareerPostView() {
               {description}
             </Typography>
 
-            <Markdown content={content} firstLetter />
+            <Markdown content={content[0]} firstLetter />
 
             <PostTags tags={tags} />
 

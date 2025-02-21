@@ -511,15 +511,15 @@ export const _descriptions = [
 
 export const _descriptionsBlog = [
   "Descubra por que um site é essencial para o sucesso do seu negócio e como ele pode ampliar sua presença online.",
-    "Saiba como um site bem estruturado pode aumentar suas vendas e atrair mais clientes.",
-    "Veja os benefícios de um site responsivo e como ele melhora a experiência do usuário.",
-    "Entenda os principais fatores técnicos que garantem um site rápido e eficiente.",
-    "Aprenda dicas essenciais para criar um site que converte visitantes em clientes.",
-    "Descubra como o comércio digital está evoluindo e por que um site é indispensável.",
-    "Conheça empresas que tiveram sucesso ao investir em um site profissional.",
-    "Saiba por que a velocidade do site é crucial e como otimizar seu desempenho.",
-    "Entenda a importância do SEO e como um site otimizado pode atrair mais visitantes.",
-    "Veja se vale a pena investir em um site para pequenos negócios e os benefícios que ele pode trazer.",
-    "Descubra como uma experiência de usuário fluida pode melhorar a retenção de clientes.",
-    "Saiba como escolher a melhor plataforma para criar um site adequado ao seu negócio."
+  "Saiba como um site bem estruturado pode aumentar suas vendas e atrair mais clientes.",
+  "Veja os benefícios de um site responsivo e como ele melhora a experiência do usuário.",
+  "Entenda os principais fatores técnicos que garantem um site rápido e eficiente.",
+  "Aprenda dicas essenciais para criar um site que converte visitantes em clientes.",
+  "Descubra como o comércio digital está evoluindo e por que um site é indispensável.",
+  "Conheça empresas que tiveram sucesso ao investir em um site profissional.",
+  "Saiba por que a velocidade do site é crucial e como otimizar seu desempenho.",
+  "Entenda a importância do SEO e como um site otimizado pode atrair mais visitantes.",
+  "Veja se vale a pena investir em um site para pequenos negócios e os benefícios que ele pode trazer.",
+  "Descubra como uma experiência de usuário fluida pode melhorar a retenção de clientes.",
+  "Saiba como escolher a melhor plataforma para criar um site adequado ao seu negócio."
 ];

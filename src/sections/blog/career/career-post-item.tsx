@@ -44,7 +44,7 @@ export default function CareerPostItem({ post, index }: Props) {
           p: 3,
           bgcolor: 'background.neutral',
           ...(noImage && {
-            bgcolor: 'primary.lighter',
+            bgcolor: '#fff',
           }),
         }}
       >
@@ -58,7 +58,7 @@ export default function CareerPostItem({ post, index }: Props) {
 
         <Link
           component={RouterLink}
-          href={paths.career.post}
+          href={`${paths.career.post}/${post.id}`}
           color="inherit"
           variant="h5"
           sx={{
