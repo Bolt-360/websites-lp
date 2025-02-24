@@ -62,6 +62,7 @@ export default function MarketingServicesInclude() {
           maxWidth: 1000,
           color: 'text.secondary',
           mb: { xs: 8, md: 10 },
+          fontSize: "1.2rem"
         }}
       >
         Com nosso serviço, você não recebe apenas um site – você ganha uma ferramenta poderosa para
@@ -94,11 +95,11 @@ export default function MarketingServicesInclude() {
               }}
             />
 
-            <Typography variant="h5" sx={{ mt: 5, mb: 2 }}>
+            <Typography variant="h4" sx={{ mt: 5, mb: 2 }}>
               {value.title}
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary' }}> {value.description} </Typography>
+            <Typography sx={{ color: 'text.secondary', fontSize: "1.2rem" }}> {value.description} </Typography>
           </div>
         ))}
       </Box>

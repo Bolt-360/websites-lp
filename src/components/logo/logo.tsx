@@ -23,10 +23,10 @@ function Logo({ single = false, headerOnDark = false, sx }: LogoProps) {
 
   const fullLogo = (
     <Image
-      src={headerOnDark ? '/bolt-white.png' : '/bolt.png'}
+      src={headerOnDark ? '/bolt_white.png' : '/bolt.png'}
       alt="Bolt Assessoria"
-      width={90}
-      height={45}
+      width={120}
+      height={65}
     />
   );
 
@@ -40,7 +40,7 @@ function Logo({ single = false, headerOnDark = false, sx }: LogoProps) {
     >
       <Box
         sx={{
-          width: single ? 64 : 75,
+          width: single ? 64 : 120,
           lineHeight: 0,
           cursor: 'pointer',
           display: 'inline-flex',

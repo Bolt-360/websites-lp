@@ -76,7 +76,7 @@ export default function MarketingLandingFaqs() {
                 />
               </AccordionSummary>
 
-              <AccordionDetails>{faq.answer}</AccordionDetails>
+              <AccordionDetails sx={{ fontSize: "1.1rem" }}>{faq.answer}</AccordionDetails>
             </Accordion>
           ))}
         </Grid>

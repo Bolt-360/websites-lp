@@ -61,7 +61,7 @@ export default function CareerLandingHero() {
                   </Box>
                 </Typography>
 
-                <Typography sx={{ color: 'grey.500' }}>
+                <Typography sx={{ color: 'grey.500', fontSize: '1.2rem' }}>
                   Na Bolt 360, criamos sites modernos, responsivos e otimizados para gerar leads,
                   fortalecer sua marca e contribuições seus resultados.
                 </Typography>

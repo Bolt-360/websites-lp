@@ -67,7 +67,7 @@ export default function CareerLatestPosts({ posts }: Props) {
             Nossos Posts
           </Typography>
 
-          <Typography sx={{ color: 'text.secondary' }}>
+          <Typography sx={{ color: 'text.secondary', fontSize: "1.2rem" }}>
             Confira dicas e insights sobre criação de sites para transformar suas ideias em
             realidade digital.
           </Typography>

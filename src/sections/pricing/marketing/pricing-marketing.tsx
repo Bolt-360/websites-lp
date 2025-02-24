@@ -42,7 +42,7 @@ export default function PricingMarketing({ plans }: Props) {
 
           <Typography variant="h2">Planos</Typography>
 
-          <Typography sx={{ color: 'text.secondary' }}>
+          <Typography sx={{ color: 'text.secondary', fontSize: "1.2rem" }}>
             Escolha o plano perfeito para suas necessidades.
             <br /> Sempre flexível para crescer
           </Typography>
@@ -65,7 +65,7 @@ export default function PricingMarketing({ plans }: Props) {
         ))}
       </Box>
 
-      <Typography variant="overline" >
+      <Typography variant="overline">
         <Typography variant='h6' sx={{color: "primary.main"}}>Serviços Adicionais:</Typography>
          Hospedagem, registro de domínio e certificados SSL podem ser contratados separadamente, conforme a necessidade.
       </Typography>

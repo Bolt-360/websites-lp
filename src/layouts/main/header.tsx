@@ -115,6 +115,9 @@ export default function Header({ headerOnDark }: Props) {
           onClick={() => sendWhatsAppMessage(WHATSAPP_CONFIG.messages.default)}
           sx={{
             display: { xs: 'none', md: 'inline-flex' },
+            px: "1.2rem",
+            py: "0.5rem",
+            fontSize: "0.9rem"
           }}
         >
           Fale Conosco

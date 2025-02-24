@@ -73,6 +73,7 @@ export default function MarketingServicesBenefits() {
             maxWidth: 800,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
+            fontSize: "1.2rem"
           }}
         >
           A presença online da sua empresa comunica para o mundo quem ela é! Um site profissional e

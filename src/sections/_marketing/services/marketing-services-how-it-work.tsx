@@ -75,6 +75,7 @@ export default function MarketingServicesHowItWork() {
             maxWidth: 480,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
+            fontSize: "1.2rem"
           }}
         >
           Saiba como desenvolvemos o site perfeito para o seu negócio em quatro etapas simples.
@@ -100,13 +101,14 @@ export default function MarketingServicesHowItWork() {
                   {value.step}
                 </Typography>
 
-                <Typography variant="h4" sx={{ mt: 0.5, mb: 1 }}>
+                <Typography variant="h4" sx={{ mt: 0.5, mb: 1, fontSize: "1.2rem" }}>
                   {value.title}
                 </Typography>
 
                 <Typography
                   variant="body2"
                   sx={{
+                    fontSize: "1.1rem",
                     opacity: 0.72,
                     maxWidth: { md: 360 },
                     ...(index % 2 && {
